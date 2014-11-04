@@ -69,7 +69,14 @@ sub run {
 		my $path_info = $request->path_info;
 
 		if ( $path_info eq '/' ) {
-			return template( 'index', );
+			my $client = $request->remote_host || $request->address;
+			return template(
+				'index',
+				{
+					title  => 'Tracert - running traceroutes',
+					client => $client
+				}
+			);
 		}
 		if ( $path_info eq '/resolver' ) {
 			return template( 'resolver',
