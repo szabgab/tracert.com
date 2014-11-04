@@ -1,0 +1,10 @@
+branches:
+  except:
+    - gh-pages
+language: perl
+perl:
+  - "5.20"
+  - "5.18"
+before_install:
+  - cpanm install --notest Alien::Tidyp
+
