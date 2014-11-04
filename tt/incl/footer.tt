@@ -1,5 +1,5 @@
 
-
+<!--
 <div id="footer">
 <ul>
   <li><a href=/copyright.html>Copyright</a></li>
@@ -8,6 +8,7 @@
   <li><a href=/faq.html>FAQ</a></li>
 </ul>
 </div>
+-->
 
 <% adsense %>
 <% google_analytics %>

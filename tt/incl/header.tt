@@ -17,4 +17,5 @@
 <a href="/">home</a>
 <a href="/resolver">Resolve</a>
 <a href="/traceroute">Traceroute</a>
+<a href="/ping">Ping</a>
 </div>

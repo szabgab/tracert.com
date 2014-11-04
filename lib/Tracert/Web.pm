@@ -31,35 +31,47 @@ Tracert::Web - The website of tracert.com
 
 my $env;
 
-my %RD = map { $_ => 1 } qw(
-	/trace_exe.html
-	/ping_exe.html
-	/pinggw.html
-	/tracegw.html
-	/tracesites.html
-	/pingsites.html
-	/cgi-bin/trace.pl
-	/cgi-bin/ping.pl
-	/cgi-bin/pingsites.pl
-	/cgi-bin/tracesites.pl
-	/index.html
-);
 
-#	'/pingexplain.html'      => '/ping.html',
-
-my %RR = map { $_ => 1 } qw(
-	/cgi-bin/resolver.pl
-	/resolve_exe.html
-	/resolver.html
-);
 
 my %RED = (
-	'/trace.html'        => '/traceroute',
-	'/traceexplain.html' => '/traceroute',
+	'/index.html'        => '/',
 	'/copyright.html'    => '/copyright',
 	'/privacy.html'      => '/privacy',
 	'/tos.html'          => '/tos',
 	'/faq.html'          => '/faq',
+	'/resources.html'    => '/resources',
+	'/contact.html'       => '/contact',
+	'/services.html'     => '/services',
+	'/news.html'         => '/news',
+
+
+map { $_ => '/resolver' } qw(
+	/cgi-bin/resolver.pl
+	/resolve_exe.html
+	/resolver.html
+),
+
+	map { $_ => '/traceroute' } qw(
+		/trace.html
+		/traceexplain.html
+	/trace_exe.html
+	/tracegw.html
+	/tracesites.html
+	/cgi-bin/trace.pl
+	/cgi-bin/tracesites.pl
+
+	),
+
+	map { $_ => '/ping' } qw(
+	/pingexplain.html
+	/ping.html
+	/ping_exe.html
+	/pinggw.html
+	/pingsites.html
+	/cgi-bin/ping.pl
+	/cgi-bin/pingsites.pl
+
+	),
 );
 
 sub run {
@@ -88,31 +100,31 @@ sub run {
 				}
 			);
 		}
+
+		
 		if ( $path_info eq '/traceroute' ) {
-			return traceroute($request);
+			return traceroute($request, 'trace');
+		}
+		if ( $path_info eq '/ping' ) {
+			return traceroute($request, 'ping');
 		}
 		if ( $path_info eq '/resolver' ) {
 			return resolver($request);
 		}
 
-		if ( $path_info eq '/copyright' ) {
-			return template( 'copyright', { title => 'Tracert copyright' } );
-		}
+		my %STATIC = (
+		'/copyright' => { title => 'Tracert copyright' },
+		'/privacy' => { title => 'Tracert privacy policy' },
+		'/tos'  => { title => 'Tracert Terms of Service' }, 
+		'/faq' => { title => 'Tracert FAQ - Frequently Asked Questions' },
+		'/resources' => { title => 'Other Resources' },
+		'/contact'  => { title => 'Contact information' },
+		'/services' => { title => 'Services' },
+		'/news'     => { title => 'News' },
+	);
 
-		if ( $path_info eq '/privacy' ) {
-			return template( 'privacy',
-				{ title => 'Tracert privacy policy' } );
-		}
-		if ( $path_info eq '/tos' ) {
-			return template( 'tos', { title => 'Tracert Terms of Service' } );
-		}
-		if ( $path_info eq '/faq' ) {
-			return template(
-				'faq',
-				{
-					title => 'Tracert FAQ - Frequently Asked Questions'
-				}
-			);
+		if ($STATIC{$path_info}) {
+			return template( substr($path_info, 1), $STATIC{$path_info});
 		}
 
 		if ( $path_info =~ m{//} ) {
@@ -120,12 +132,6 @@ sub run {
 			return redirect($path_info);
 		}
 
-		if ( $RD{$path_info} ) {
-			return redirect('/');
-		}
-		if ( $RR{$path_info} ) {
-			return redirect('/resolver');
-		}
 		if ( $RED{$path_info} ) {
 			return redirect( $RED{$path_info} );
 		}
@@ -160,7 +166,7 @@ sub resolver {
 }
 
 sub traceroute {
-	my ($request) = @_;
+	my ($request, $service) = @_;
 
 	my $host = $request->param('t');
 
@@ -171,8 +177,9 @@ sub traceroute {
 	return template(
 		'traceroute',
 		{
-			title    => 'Traceroute',
+			title    => ($service eq 'trace' ? 'Traceroute' : 'Pint'),
 			gateways => \@gws,
+			service  => $service,
 
 			#			host  => $host,
 			#			out   => $out,

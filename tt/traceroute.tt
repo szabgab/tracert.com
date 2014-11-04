@@ -2,7 +2,7 @@
 
 <ul>
 <% FOR s IN gateways %>
-  <% IF s.service == 'trace' %>
+  <% IF s.service == service %>
      <li><% s.country %> - <a href="http://<% s.homepage_url %><% s.path %>"><% s.organization %></a></li>
   <% END %>
 <% END %>
@@ -12,6 +12,8 @@
 <% INCLUDE 'incl/traceroute_form.tt' %>
 -->
 
+<!--
+
 <% IF host %>
   Traceroute to <% host %>
   
@@ -20,4 +22,5 @@
   </pre>
 <% END %>
 
+-->
 
