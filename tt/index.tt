@@ -1,0 +1,13 @@
+
+
+<p>
+The <b>TraceRT</b> web providing access to many <b>tracerout</b> and <b>tracepath</b> gateways is undergoing
+a major facelift. For now You can run traceroute from our server located in San Francisco by using the form below.
+</p>
+
+<form action="/traceroute">
+<input name="t" value="<% client %>" />
+<input type="submit" value="Run trace" />
+</form>
+
+
