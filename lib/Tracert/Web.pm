@@ -69,14 +69,15 @@ sub run {
 		my $request   = Plack::Request->new($env);
 		my $path_info = $request->path_info;
 
+		# these two extra env variables are passed by Nginx
+		my $client
+			= $env->{HTTP_X_REAL_IP}
+			|| $env->{HTTP_X_FORWARDED_HOST}
+			|| $request->remote_host
+			|| $request->address;
+
 		if ( $path_info eq '/' ) {
 
-			# these two extra env variables are passed by Nginx
-			my $client
-				= $env->{HTTP_X_REAL_IP}
-				|| $env->{HTTP_X_FORWARDED_HOST}
-				|| $request->remote_host
-				|| $request->address;
 			return template(
 				'index',
 				{
@@ -84,6 +85,9 @@ sub run {
 					client => $client
 				}
 			);
+		}
+		if ( $path_info eq '/traceroute' ) {
+			return traceroute($request);
 		}
 		if ( $path_info eq '/resolver' ) {
 			return resolver($request);
@@ -151,6 +155,22 @@ sub resolver {
 		}
 	}
 	return template( 'resolver', \%params );
+}
+
+sub traceroute {
+	my ($request) = @_;
+
+	my $host = $request->param('t');
+	my ($out) = Tracert::Exe->trace($hots);
+
+	return template(
+		'traceroute',
+		{
+			title => 'Traceroute',
+			host  => $host,
+			out   => $out,
+		}
+	);
 }
 
 sub template {

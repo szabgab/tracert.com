@@ -13,4 +13,8 @@
 </head>
 <body>
 
-
+<div>
+<a href="/">home</a>
+<a href="/resolver">Resolve</a>
+<a href="/traceroute">Traceroute</a>
+</div>

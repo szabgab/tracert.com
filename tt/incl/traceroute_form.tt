@@ -1,0 +1,6 @@
+<form action="/traceroute">
+<input name="t" value="<% client %>" size="40" />
+<input type="submit" value="Run trace" />
+</form>
+
+
