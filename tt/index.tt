@@ -5,7 +5,10 @@ The <b>TraceRT</b> web providing access to many <b>tracerout</b> and <b>tracepat
 a major facelift. For now You can run traceroute from our server located in San Francisco by using the form below.
 </p>
 
+<!--
 <% INCLUDE 'incl/traceroute_form.tt' %>
+-->
+
 
 <% INCLUDE 'incl/resolver_form.tt' %>
 

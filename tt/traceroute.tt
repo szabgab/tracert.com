@@ -1,5 +1,12 @@
 
+
+<% FOR s IN servers %>
+
+<% END %>
+
+<!--
 <% INCLUDE 'incl/traceroute_form.tt' %>
+-->
 
 <% IF host %>
   Traceroute to <% host %>

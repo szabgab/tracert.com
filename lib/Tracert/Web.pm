@@ -163,14 +163,16 @@ sub traceroute {
 	my ($request) = @_;
 
 	my $host = $request->param('t');
-	my ($out) = Tracert::Exe->trace( host => $host, lines => 5 );
+
+	#my ($out) = Tracert::Exe->trace( host => $host, lines => 5 );
 
 	return template(
 		'traceroute',
 		{
 			title => 'Traceroute',
-			host  => $host,
-			out   => $out,
+
+			#			host  => $host,
+			#			out   => $out,
 		}
 	);
 }
