@@ -27,6 +27,17 @@ push @cases, map { [ $_ => '/' ] } qw(
 	/tracegw.html
 	/tracesites.html
 	/pingsites.html
+	/cgi-bin/trace.pl
+	/cgi-bin/ping.pl
+	/cgi-bin/pingsites.pl
+	/cgi-bin/tracesites.pl
+	/index.html
+);
+
+push @cases, map { [ $_ => '/resolver' ] } qw(
+	/cgi-bin/resolver.pl
+	/resolve_exe.html
+	/resolver.html
 );
 
 plan tests => 3 * @cases;

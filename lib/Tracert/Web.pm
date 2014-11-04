@@ -35,6 +35,17 @@ my %RD = map { $_ => 1 } qw(
 	/tracegw.html
 	/tracesites.html
 	/pingsites.html
+	/cgi-bin/trace.pl
+	/cgi-bin/ping.pl
+	/cgi-bin/pingsites.pl
+	/cgi-bin/tracesites.pl
+	/index.html
+);
+
+my %RR = map { $_ => 1 } qw(
+	/cgi-bin/resolver.pl
+	/resolve_exe.html
+	/resolver.html
 );
 
 sub run {
@@ -57,6 +68,9 @@ sub run {
 
 		if ( $RD{$path_info} ) {
 			return redirect('/');
+		}
+		if ( $RR{$path_info} ) {
+			return redirect('/resolver');
 		}
 
 		return not_found();
