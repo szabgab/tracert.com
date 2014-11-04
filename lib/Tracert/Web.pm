@@ -38,9 +38,7 @@ sub run {
 		my $path_info = $request->path_info;
 
 		if ( $path_info eq '/' ) {
-			return template(
-				'index',
-			);
+			return template( 'index', );
 		}
 
 		if ( $path_info =~ m{//} ) {
@@ -63,8 +61,6 @@ sub run {
 	};
 }
 
-
-
 sub template {
 	my ( $file, $vars ) = @_;
 	$vars //= {};
@@ -83,6 +79,7 @@ sub template {
 	#};
 
 	my $request = Plack::Request->new($env);
+
 	#$vars->{query} //= $request->param('query');
 	#$vars->{mode}  //= $request->param('mode');
 
