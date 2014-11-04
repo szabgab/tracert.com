@@ -23,22 +23,44 @@ sub trace {
 
 		#local $SIG{__DIE__} = 'IGNORE';
 
-		#eval {
-		#	local $SIG{ALRM} = sub { die 'Timeout' };
 		my $start = time;
 
 		#	alarm($timeout);
 		if ( open my $ph, '-|', "$command $host 2>&1" ) {
-			while ( my $line = <$ph> ) {
-				$out .= $line;
+			my $err;
+			while (1) {
+				my $line;
+				eval {
+					local $SIG{ALRM} = sub { die 'Timeout' };
+					$line = <$ph>;
+					alarm(0);
+					1;
+				} or do {
+					$err = $@;
+					alarm(0);
+				};
+
+				if ( defined $line ) {
+					$out .= $line;
+				}
+				if ($err) {
+					$out = "\n$err\n";
+					last;
+				}
+				last if not defined $line;
+				if ( time - $start > $timeout ) {
+					$out .= "\nTimeout\n";
+					last;
+				}
 				$cnt_lines++;
-				last if $params{lines} and $cnt_lines > $params{lines};
+				if ( $params{lines} and $cnt_lines > $params{lines} ) {
+					$out .= "\nMax lines reached\n";
+					last;
+				}
 			}
 			close $ph;
 		}
 
-		#};
-		#alarm(0);
 		return $out;
 	}
 	else {
