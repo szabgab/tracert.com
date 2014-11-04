@@ -1,0 +1,6 @@
+<form action="/resolver" method="POST">
+  <p><input name="arg" value="" size="20" />
+    <input type="submit" value="Resolve"> </p>
+</form>
+
+

@@ -1,0 +1,17 @@
+<h2>Frequently Asked Questions</h2>
+
+<p>
+<b>Is there a version of traceroute for Win95/Win98/Me/2000 ?</b><br>
+There is a traceroute and a ping program insatlled on all of those operating systems they are called tracert and ping respectively. You can run them from the MS-DOS Prompt.
+The versions that you can dowload from here are for server operation, you need them only if you want to setup a Gateway. The NT version probably can run on Win95/98/Me/2000 as well but I have not tested it.
+</p>
+
+<!--
+<p>
+<b>I got my username and password but I cannot login.</b><br>
+First make sure that you are typing the username and password correctly, it is case sensitive. The would be to copy/paste the both of them from the e-mail you got.
+If it is still not working then you can go to lost password recovery page. Filling in your username will send you a new password.
+If that is still not working then try to register with a different username.
+</p>
+-->
+

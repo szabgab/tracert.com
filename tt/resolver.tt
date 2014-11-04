@@ -1,0 +1,21 @@
+
+<p>
+If you have registered your domain name lately, or if you move it from one provider to
+another, here you can check if the name www.yourdomain.com already is know by the world
+and if it works correctly.  <br>
+Type in your domain name (like www.yourdomain.com) here and press the button, to see the
+results.
+</p>
+
+<% INCLUDE 'incl/resolver_form' %>
+
+<p>
+What you can see here is the IP address your name tranlsates to.
+</p>
+
+<p>
+If you have a number on the right side it means, your address already works at least
+from the point where our gateway is located. If there is no number on the right side it
+means your name does not work at this location. <br>
+If you have just moved your domain, you can check if the number is correct or not.
+</p>

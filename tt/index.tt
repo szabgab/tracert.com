@@ -10,4 +10,5 @@ a major facelift. For now You can run traceroute from our server located in San 
 <input type="submit" value="Run trace" />
 </form>
 
+<% INCLUDE 'incl/resolver_form' %>
 

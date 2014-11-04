@@ -42,10 +42,21 @@ my %RD = map { $_ => 1 } qw(
 	/index.html
 );
 
+#	'/pingexplain.html'      => '/ping.html',
+
 my %RR = map { $_ => 1 } qw(
 	/cgi-bin/resolver.pl
 	/resolve_exe.html
 	/resolver.html
+);
+
+my %RED = (
+	'/trace.html'        => '/traceroute',
+	'/traceexplain.html' => '/traceroute',
+	'/copyright.html'    => '/copyright',
+	'/privacy.html'      => '/privacy',
+	'/tos.html'          => '/tos',
+	'/faq.html'          => '/faq',
 );
 
 sub run {
@@ -60,6 +71,30 @@ sub run {
 		if ( $path_info eq '/' ) {
 			return template( 'index', );
 		}
+		if ( $path_info eq '/resolver' ) {
+			return template( 'resolver',
+				{ title => 'Resolver gateway - Testing DNS resolving' } );
+		}
+
+		if ( $path_info eq '/copyright' ) {
+			return template( 'copyright', { title => 'TraceRT copyright' } );
+		}
+
+		if ( $path_info eq '/privacy' ) {
+			return template( 'privacy',
+				{ title => 'TraceRT privacy policy' } );
+		}
+		if ( $path_info eq '/tos' ) {
+			return template( 'tos', { title => 'TraceRT Terms of Service' } );
+		}
+		if ( $path_info eq '/faq' ) {
+			return template(
+				'faq',
+				{
+					title => 'TraceRT FAQ - Frequently Asked Questions'
+				}
+			);
+		}
 
 		if ( $path_info =~ m{//} ) {
 			$path_info =~ s{//+}{/}g;
@@ -71,6 +106,9 @@ sub run {
 		}
 		if ( $RR{$path_info} ) {
 			return redirect('/resolver');
+		}
+		if ( $RED{$path_info} ) {
+			return redirect( $RED{$path_info} );
 		}
 
 		return not_found();
@@ -95,6 +133,11 @@ sub template {
 	my $ga_file = "$root/config/google_analytics.txt";
 	if ( -e $ga_file ) {
 		$vars->{google_analytics} = path($ga_file)->slurp_utf8 // '';
+	}
+
+	my $as_file = "$root/config/adsense.txt";
+	if ( -e $as_file ) {
+		$vars->{adsense} = path($as_file)->slurp_utf8 // '';
 	}
 
 	#eval {
