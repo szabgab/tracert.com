@@ -166,15 +166,27 @@ sub traceroute {
 
 	#my ($out) = Tracert::Exe->trace( host => $host, lines => 5 );
 
+	my $data = load_data();
+	my @gws = sort { $a->{country} cmp $b->{country} } @{ $data->{gateways} };
 	return template(
 		'traceroute',
 		{
-			title => 'Traceroute',
+			title    => 'Traceroute',
+			gateways => \@gws,
 
 			#			host  => $host,
 			#			out   => $out,
 		}
 	);
+}
+
+sub load_data {
+
+	my $root = root();
+	my $path = "$root/data/db.json";
+	my $data = from_json path($path)->slurp_utf8;
+
+	#die Dumper $data;
 }
 
 sub template {
