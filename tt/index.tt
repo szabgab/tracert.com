@@ -6,9 +6,9 @@ a major facelift. For now You can run traceroute from our server located in San 
 </p>
 
 <form action="/traceroute">
-<input name="t" value="<% client %>" />
+<input name="t" value="<% client %>" size="40" />
 <input type="submit" value="Run trace" />
 </form>
 
-<% INCLUDE 'incl/resolver_form' %>
+<% INCLUDE 'incl/resolver_form.tt' %>
 

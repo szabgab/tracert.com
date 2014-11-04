@@ -1,5 +1,5 @@
 <form action="/resolver" method="POST">
-  <p><input name="arg" value="" size="20" />
+  <p><input name="arg" value="" size="40"  placeholder="perlmaven.com" />
     <input type="submit" value="Resolve"> </p>
 </form>
 
