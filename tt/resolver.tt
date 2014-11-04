@@ -7,7 +7,15 @@ Type in your domain name (like www.yourdomain.com) here and press the button, to
 results.
 </p>
 
-<% INCLUDE 'incl/resolver_form' %>
+<% IF hostname %>
+  <% IF ip %>
+    <h2>Resolution of <% hostname %> is <% ip %></h2>
+  <% ELSE %>
+    <h2>Could not resolve <% hostname %>.</h2>
+  <% END %>
+<% END %> 
+
+<% INCLUDE 'incl/resolver_form.tt' %>
 
 <p>
 What you can see here is the IP address your name tranlsates to.

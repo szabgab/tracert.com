@@ -15,6 +15,7 @@ use Plack::Response;
 use Plack::Request;
 use Pod::Simple::HTML;
 use POSIX qw(strftime);
+use Socket qw(inet_ntoa);
 use Template;
 use Time::Local qw(timegm);
 
@@ -73,32 +74,31 @@ sub run {
 			return template(
 				'index',
 				{
-					title  => 'Tracert - running traceroutes',
+					title  => 'Tracert - running traceroute world wide',
 					client => $client
 				}
 			);
 		}
 		if ( $path_info eq '/resolver' ) {
-			return template( 'resolver',
-				{ title => 'Resolver gateway - Testing DNS resolving' } );
+			return resolver($request);
 		}
 
 		if ( $path_info eq '/copyright' ) {
-			return template( 'copyright', { title => 'TraceRT copyright' } );
+			return template( 'copyright', { title => 'Tracert copyright' } );
 		}
 
 		if ( $path_info eq '/privacy' ) {
 			return template( 'privacy',
-				{ title => 'TraceRT privacy policy' } );
+				{ title => 'Tracert privacy policy' } );
 		}
 		if ( $path_info eq '/tos' ) {
-			return template( 'tos', { title => 'TraceRT Terms of Service' } );
+			return template( 'tos', { title => 'Tracert Terms of Service' } );
 		}
 		if ( $path_info eq '/faq' ) {
 			return template(
 				'faq',
 				{
-					title => 'TraceRT FAQ - Frequently Asked Questions'
+					title => 'Tracert FAQ - Frequently Asked Questions'
 				}
 			);
 		}
@@ -127,6 +127,24 @@ sub run {
 			root => "$root/static/";
 		$app;
 	};
+}
+
+sub resolver {
+	my ($request) = @_;
+
+	my %params = ( title => 'Resolver gateway - Testing DNS resolving', );
+	my $hostname = $request->param('arg');
+	if ($hostname) {
+		$params{hostname} = $hostname;
+		my $packed = scalar gethostbyname $hostname;
+		if ($packed) {
+			my $ip = inet_ntoa($packed);
+			if ($ip) {
+				$params{ip} = $ip;
+			}
+		}
+	}
+	return template( 'resolver', \%params );
 }
 
 sub template {
