@@ -19,6 +19,8 @@ use Socket qw(inet_ntoa);
 use Template;
 use Time::Local qw(timegm);
 
+use Tracert::Exe;
+
 our $VERSION = '0.01';
 
 =head1 NAME
@@ -161,7 +163,7 @@ sub traceroute {
 	my ($request) = @_;
 
 	my $host = $request->param('t');
-	my ($out) = Tracert::Exe->trace($hots);
+	my ($out) = Tracert::Exe->trace( host => $host, lines => 5 );
 
 	return template(
 		'traceroute',

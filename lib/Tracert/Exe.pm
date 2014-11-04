@@ -3,7 +3,9 @@ use strict;
 use warnings;
 
 sub trace {
-	my ( $class, $host ) = @_;
+	my ( $class, %params ) = @_;
+
+	my $timeout = $params{timeout} || 10;
 
 	my @exes = qw(/usr/sbin/traceroute /usr/bin/tracepath);
 	my ($command) = grep { -x $_ } @exes;
@@ -11,29 +13,36 @@ sub trace {
 
 	my $out = '';
 	if (
-		$host !~ /\.\./
-		and (  ( $host =~ /^(\d+\.\d+\.\d+\.\d+)$/ )
-			or ( $host =~ /^([a-zA-Z0-9][a-zA-Z0-9\.\-_]*)$/ ) )
+		$params{host} !~ /\.\./
+		and (  ( $params{host} =~ /^(\d+\.\d+\.\d+\.\d+)$/ )
+			or ( $params{host} =~ /^([a-zA-Z0-9][a-zA-Z0-9\.\-_]*)$/ ) )
 		)
 	{
-		$host = $1;    # unTaint
-		eval {
-			local $SIG{ALRM} = sub { die 'Timeout' };
-			my $start = time;
-			alarm(10);
-			my $cnt = 5;
-			if ( open my $ph, '-|', "$command $host" ) {
-				while ( my $line = <$ph> ) {
-					$out .= $line;
-					last if $cnt-- < 0;
-				}
+		my $host      = $1;    # unTaint
+		my $cnt_lines = 0;
+
+		#local $SIG{__DIE__} = 'IGNORE';
+
+		#eval {
+		#	local $SIG{ALRM} = sub { die 'Timeout' };
+		my $start = time;
+
+		#	alarm($timeout);
+		if ( open my $ph, '-|', "$command $host 2>&1" ) {
+			while ( my $line = <$ph> ) {
+				$out .= $line;
+				$cnt_lines++;
+				last if $params{lines} and $cnt_lines > $params{lines};
 			}
-		};
-		alarm(0);
+			close $ph;
+		}
+
+		#};
+		#alarm(0);
 		return $out;
 	}
 	else {
-		return 'Invalid hostname';
+		return "Invalid hostname: '$params{host}'";
 	}
 
 }
