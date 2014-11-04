@@ -21,6 +21,14 @@ my @cases = (
 	],
 );
 
+push @cases, map { [ $_ => '/' ] } qw(
+	/ping_exe.html
+	/pinggw.html
+	/tracegw.html
+	/tracesites.html
+	/pingsites.html
+);
+
 plan tests => 3 * @cases;
 
 foreach my $c (@cases) {

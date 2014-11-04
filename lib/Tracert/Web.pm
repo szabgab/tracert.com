@@ -28,6 +28,15 @@ Tracert::Web - The website of tracert.com
 
 my $env;
 
+my %RD = map { $_ => 1 } qw(
+	/trace_exe.html
+	/ping_exe.html
+	/pinggw.html
+	/tracegw.html
+	/tracesites.html
+	/pingsites.html
+);
+
 sub run {
 	my $root = root();
 
@@ -46,7 +55,7 @@ sub run {
 			return redirect($path_info);
 		}
 
-		if ( $path_info eq '/trace_exe.html' ) {
+		if ( $RD{$path_info} ) {
 			return redirect('/');
 		}
 
