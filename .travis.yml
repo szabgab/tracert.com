@@ -7,4 +7,5 @@ perl:
   - "5.18"
 before_install:
   - cpanm install --notest Alien::Tidyp
+  - sudo aptitude install inetutils-traceroute
 
