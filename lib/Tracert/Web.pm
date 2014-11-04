@@ -73,10 +73,10 @@ sub run {
 
 			# these two extra env variables are passed by Nginx
 			my $client
-				= $request->remote_host
-				|| $env->{HTTP_X_REAL_IP}
-				|| $request->address
-				|| $env->{HTTP_X_FORWARDED_HOST};
+				= $env->{HTTP_X_REAL_IP}
+				|| $env->{HTTP_X_FORWARDED_HOST}
+				|| $request->remote_host
+				|| $request->address;
 			return template(
 				'index',
 				{
