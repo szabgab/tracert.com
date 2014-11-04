@@ -42,33 +42,41 @@ my %RED = (
 	'/services.html'  => '/services',
 	'/news.html'      => '/news',
 
-	map { $_ => '/resolver' } qw(
-		/cgi-bin/resolver.pl
-		/resolve_exe.html
-		/resolver.html
-		),
+	(
+		map { $_ => '/resolver' }
+			qw(
+			/cgi-bin/resolver.pl
+			/resolve_exe.html
+			/resolver.html
+			),
+	),
 
-	map { $_ => '/traceroute' } qw(
-		/trace.html
-		/traceexplain.html
-		/trace_exe.html
-		/tracegw.html
-		/tracesites.html
-		/cgi-bin/trace.pl
-		/cgi-bin/tracesites.pl
+	(
+		map { $_ => '/traceroute' }
+			qw(
+			/trace.html
+			/traceexplain.html
+			/trace_exe.html
+			/tracegw.html
+			/tracesites.html
+			/cgi-bin/trace.pl
+			/cgi-bin/tracesites.pl
 
-		),
+			),
+	),
+	(
+		map { $_ => '/ping' }
+			qw(
+			/pingexplain.html
+			/ping.html
+			/ping_exe.html
+			/pinggw.html
+			/pingsites.html
+			/cgi-bin/ping.pl
+			/cgi-bin/pingsites.pl
 
-	map { $_ => '/ping' } qw(
-		/pingexplain.html
-		/ping.html
-		/ping_exe.html
-		/pinggw.html
-		/pingsites.html
-		/cgi-bin/ping.pl
-		/cgi-bin/pingsites.pl
-
-		),
+			),
+	),
 );
 
 sub run {

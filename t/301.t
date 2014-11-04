@@ -15,22 +15,26 @@ my $tidy = html_tidy();
 my $app = Tracert::Web->run;
 
 # URL pairs. Given the first URL, sco should redirect to the second.
-my @cases = (
-	[
-		'/trace_exe.html' => '/'
-	],
+my @cases;
+
+push @cases, map { [ $_ => '/ping' ] } qw(
+	/ping_exe.html
+	/pinggw.html
+	/pingsites.html
+	/cgi-bin/ping.pl
+	/cgi-bin/pingsites.pl
+);
+
+push @cases, map { [ $_ => '/traceroute' ] } qw(
+	/tracegw.html
+	/tracesites.html
+	/cgi-bin/trace.pl
+	/cgi-bin/tracesites.pl
+	/trace_exe.html
+
 );
 
 push @cases, map { [ $_ => '/' ] } qw(
-	/ping_exe.html
-	/pinggw.html
-	/tracegw.html
-	/tracesites.html
-	/pingsites.html
-	/cgi-bin/trace.pl
-	/cgi-bin/ping.pl
-	/cgi-bin/pingsites.pl
-	/cgi-bin/tracesites.pl
 	/index.html
 );
 
