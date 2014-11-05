@@ -19,3 +19,6 @@
 </head>
 <body>
 <% INCLUDE 'incl/menu.tt' %>
+
+<main class="ui page grid">
+

@@ -2,7 +2,6 @@
   title = "Traceroute from around the world"
 %>
 
-<main class="ui page grid">
     <div class="row">
         <div class="column">
             <div class="ui message main">
@@ -27,7 +26,6 @@
             </div>
         </div>
     </div>
-</main>
 
 
 

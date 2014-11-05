@@ -2,7 +2,6 @@
   title = "Resolve hostname to IP address"
 %>
 
-<main class="ui page grid">
     <div class="row">
         <div class="column">
             <div class="ui message main">
@@ -42,12 +41,3 @@ If you have just moved your domain, you can check if the number is correct or no
             </div>
         </div>
     </div>
-</main>
-
-
-
-
-
-
-
-
