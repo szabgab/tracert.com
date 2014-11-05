@@ -1,4 +1,4 @@
-<h2>Terms of Service</h2>
+=title Tracert Terms of Service
 
 <p>
 By using this service you accept to receive ocassional updates about this and other services of the company. You understand that the provider of the Speed-Meter service is not responsible for any damage or loss of revenue in any form that is caused by this service or by the lack of availability of this service. 

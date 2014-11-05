@@ -101,6 +101,10 @@ sub run {
 			);
 		}
 
+		if ( $path_info eq '/run' ) {
+			return run_traceroute($env, $request);
+		}
+
 		if ( $path_info eq '/traceroute' ) {
 			return traceroute( $env, $request, 'trace' );
 		}
@@ -114,13 +118,31 @@ sub run {
 		my %STATIC = (
 			'/copyright' => { title => 'Tracert copyright' },
 			'/privacy'   => { title => 'Tracert privacy policy' },
-			'/tos'       => { title => 'Tracert Terms of Service' },
 			'/faq' => { title => 'Tracert FAQ - Frequently Asked Questions' },
 			'/resources' => { title => 'Other Resources' },
 			'/contact'   => { title => 'Contact information' },
 			'/services'  => { title => 'Services' },
 			'/news'      => { title => 'News' },
 		);
+
+		if ($path_info =~ m{^/\w+}) {
+			my $file_path = "$root/pages$path_info.txt";
+			if (-e $file_path) {
+				my @lines = path($file_path)->lines_utf8;
+
+				my %data;
+				while (@lines) {
+					if ($lines[0] =~ m{^=(\w+)\s+(.+?)\s*$}) {
+						$data{$1} = $2;
+						shift @lines;
+					} else {
+						last;
+					}
+				}
+				$data{content} = join "\n", @lines;
+				return template('page', \%data);
+			}
+		}
 
 		if ( $STATIC{$path_info} ) {
 			return template( substr( $path_info, 1 ), $STATIC{$path_info} );
@@ -162,6 +184,20 @@ sub resolver {
 		}
 	}
 	return template( 'resolver', \%params );
+}
+
+sub run_traceroute {
+	my ( $env, $request ) = @_;
+
+	my $host = $request->param('host');
+	if (not $host) {
+		return [ '200', [ 'Content-Type' => 'text/html' ], ['Missing host'], ];
+	}
+	# TODO check if valid IP and/or valid hostname
+	# TODO if it starts with http:// remove it before passing to clients.
+
+	return [ '200', [ 'Content-Type' => 'text/html' ], [$host], ];
+	return template('run');
 }
 
 sub traceroute {

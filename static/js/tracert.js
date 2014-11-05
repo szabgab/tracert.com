@@ -34,10 +34,9 @@ $(document).ready(function(){
 		//		gws++;
 		//	}
 		//});
-		console.log($('#form').serialize());
-		console.log(gws);
-			//var reswin = window.open("", "ResultWindow","status,resizable=yes,hight=500");
-			//reswin.focus();
+		var req = $('#form').serialize();
+		var reswin = window.open("/run?" + req, "ResultWindow","status,resizable=yes,hight=500");
+		reswin.focus();
 		//alert(this);
 	});
 });
