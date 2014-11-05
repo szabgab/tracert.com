@@ -1,12 +1,11 @@
-<frameset rows="<% rowsize %>">
+<frameset rows="<% rows %>">
 <frame name="f" src="/gw-head">
 
 <% FOR f IN frames %>
   <% IF f.access_type == 'GET' %>
-     <frame name="<% f.organization %>" src="<% f.request %>">
+     <frame name="gw_<% f.id %>" src="<% f.request %>">
   <% ELSE %>
-     <frame name="<% f.organization %>" 
-            src="/post??site=<% f.id %>&ip=<% address %>">
+     <frame name="gw_<% f.id %>" src="/post?site=<% f.id %>&ip=<% host %>">
   <% END %>
 <% END %>
 </frameset>

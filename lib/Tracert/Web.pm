@@ -104,6 +104,9 @@ sub run {
 		if ( $path_info eq '/run' ) {
 			return run_traceroute( $env, $request );
 		}
+		if ( $path_info eq '/gw-head' ) {
+			return plain_template('gw_head');
+		}
 
 		if ( $path_info eq '/traceroute' ) {
 			return traceroute( $env, $request, 'trace' );
@@ -177,16 +180,45 @@ sub run_traceroute {
 	my ( $env, $request ) = @_;
 
 	my $host = $request->param('host');
+	my @gws  = $request->param('gw');
 	if ( not $host ) {
 		return [ '200', [ 'Content-Type' => 'text/html' ], ['Missing host'],
 		];
 	}
+	if ( not @gws ) {
+		return [
+			'200', [ 'Content-Type' => 'text/html' ],
+			['Missing gateways'],
+		];
+	}
+
+	my %gws = map { $_ => 1 } @gws;
+
+	my $data = Tracert::DB->new( root => root() )->load_data();
+	my @gateways = grep { $gws{ $_->{id} } } @{ $data->{gateways} };
+
+	foreach my $gw (@gateways) {
+		$gw->{request}
+			= "$gw->{url}$gw->{path}?"
+			. ( $gw->{extra_params} || '' )
+			. $host;
+	}
+
+	my $top_frame_height = 15;
+	my $frame_height
+		= int( 10 * ( 100 - $top_frame_height ) / scalar @gateways ) / 10;
+
+	# "15%,42.5%,42.5%"
+	my $rows = "$top_frame_height%," . join ',',
+		( ("$frame_height%") x scalar @gateways );
 
 	# TODO check if valid IP and/or valid hostname
 	# TODO if it starts with http:// remove it before passing to clients.
 
-	return [ '200', [ 'Content-Type' => 'text/html' ], [$host], ];
-	return template('run');
+#return [ '200', [ 'Content-Type' => 'text/html' ], ["$host " . join "-", @gws], ];
+#return [ '200', [ 'Content-Type' => 'text/plain' ], [Dumper \@gateways], ];
+	return plain_template( 'run',
+		{ frames => \@gateways, host => $host, rows => $rows } );
 }
 
 sub traceroute {
@@ -226,6 +258,24 @@ sub _client {
 
 	# let the developer see tracert.com in the box, not localhost
 	return $client eq '127.0.0.1' ? 'tracert.com' : $client;
+}
+
+sub plain_template {
+	my ( $file, $vars ) = @_;
+	my $root = root();
+
+	my $tt = Template->new(
+		INCLUDE_PATH => "$root/tt",
+		INTERPOLATE  => 0,
+		POST_CHOMP   => 1,
+		EVAL_PERL    => 0,
+		START_TAG    => '<%',
+		END_TAG      => '%>',
+	);
+	my $out;
+	$tt->process( "$file.tt", $vars, \$out )
+		|| Carp::confess $tt->error();
+	return [ '200', [ 'Content-Type' => 'text/html' ], [$out], ];
 }
 
 sub template {

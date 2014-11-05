@@ -35,6 +35,7 @@ $(document).ready(function(){
 		//	}
 		//});
 		var req = $('#form').serialize();
+		console.log(req);
 		var reswin = window.open("/run?" + req, "ResultWindow","status,resizable=yes,hight=500");
 		reswin.focus();
 		//alert(this);

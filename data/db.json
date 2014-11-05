@@ -116,7 +116,7 @@
          "comments" : "",
          "country" : "Australia",
          "email" : "webmaster@@@telstra.net",
-         "extra_params" : "",
+         "extra_params" : "destination=",
          "homepage_url" : "http://www.telstra.net",
          "id" : "7",
          "input" : "",
