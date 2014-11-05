@@ -193,11 +193,14 @@ sub _client {
 	my $request = Plack::Request->new($env);
 
 	# these two extra env variables are passed by Nginx
-	return
-		   $env->{HTTP_X_REAL_IP}
+	my $client
+		= $env->{HTTP_X_REAL_IP}
 		|| $env->{HTTP_X_FORWARDED_HOST}
 		|| $request->remote_host
 		|| $request->address;
+
+	# let the developer see tracert.com in the box, not localhost
+	return $client eq '127.0.0.1' ? 'tracert.com' : $client;
 }
 
 sub template {
