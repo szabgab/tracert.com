@@ -1,0 +1,31 @@
+    <nav class="ui fixed menu inverted navbar">
+        <a href="/" class="active brand item">Tracert</a>
+
+
+<!--
+        <a href="" class="active item">Home</a>
+-->
+        <a href="/resolver" class="item">Resolve</a>
+        <a href="/traceroute" class="item">Traceroute</a>
+        <a href="/ping" class="item">Ping</a>
+
+<!--
+        <div class="ui dropdown item">Sources
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a href="/cpan" class="item">CPAN</a>
+            <a href="/pypi" class="item">PyPi</a>
+            <a href="/pear" class="item">PEAR</a>
+            <a href="/gems" class="item">Gems</a>
+            <a href="/npm" class="item">NPM</a>
+            <div class="ui horizontal divider"></div>
+            <a href="/" class="item">One more seperated link</a>
+          </div>
+        </div>
+
+      <div class="menu right">
+          <a href="/blog/atom" class="item"><i class="rss icon"></i></a>
+      </div>
+-->
+    </nav> <!-- end nav -->
+

@@ -145,7 +145,7 @@ sub run {
 
 	builder {
 		enable 'Plack::Middleware::Static',
-			path => qr{^/(favicon.ico|robots.txt)},
+			path => qr{^/(images|js|css|fonts|favicon.ico|robots.txt)/},
 			root => "$root/static/";
 		$app;
 	};

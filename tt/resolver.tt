@@ -1,3 +1,12 @@
+<% META
+  title = "Resolve hostname to IP address"
+%>
+
+<main class="ui page grid">
+    <div class="row">
+        <div class="column">
+            <div class="ui message main">
+                <h1 class="ui header"><% template.title %></h1>
 
 <p>
 If you have registered your domain name lately, or if you move it from one provider to
@@ -27,3 +36,18 @@ from the point where our gateway is located. If there is no number on the right 
 means your name does not work at this location. <br>
 If you have just moved your domain, you can check if the number is correct or not.
 </p>
+                <p>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+
+
+
