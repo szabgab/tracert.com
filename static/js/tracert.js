@@ -15,6 +15,15 @@ $(document).ready(function(){
 		}
 	});
 
+	$('#resolve').on('click', function() {
+		if (! $('#arg').val()) {
+			console.log('no');
+			$("#needhostname").modal('show');
+			return false;
+		}
+		return true;
+	});
+
 	$('#run').on('click', function() {
 		//alert($('#host').val());
 

@@ -25,6 +25,8 @@
   <script src="/js/semantic.min.js"></script>
   <script src="/js/tracert.js"></script>
 
+<% INCLUDE 'incl/modals.tt' %>
+
 <% google_analytics %>
 </body>
 </html>

@@ -1,8 +1,8 @@
 <form action="/resolver" method="POST">
    <div class="ui input">
-     <input name="arg" value="<% hostname %>" size="40"  placeholder="perlmaven.com" />
+     <input name="arg" id="arg" value="<% hostname %>" size="40"  placeholder="perlmaven.com" />
    </div>
-   <input type="submit" value="Resolve" class="ui button" />
+   <input type="submit" value="Resolve" id="resolve" class="ui button" />
 </form>
 
 

@@ -1,0 +1,17 @@
+<div class="ui small modal" id="needhostname">
+  <div class="header">
+   Tracert
+  </div>
+  <div class="content">
+    <div class="left">
+      You need to provide a hostname
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui button">
+      OK
+    </div>
+  </div>
+</div>
+
+
