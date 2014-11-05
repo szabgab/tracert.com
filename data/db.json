@@ -107,6 +107,44 @@
          "service" : "ping",
          "status" : "SHOW",
          "url" : "http://www.his.com"
+      },
+      {
+         "access_type" : "GET",
+         "action" : "",
+         "backbone" : "",
+         "city" : "",
+         "comments" : "",
+         "country" : "Argentina",
+         "email" : "",
+         "extra_params" : "",
+         "homepage_url" : "http://www.telvgg.coop/",
+         "id" : "10",
+         "input" : "",
+         "organization" : "Cooperativa Telefonica de Villa Gobernador Galvez Ltda (AS11815)",
+         "path" : "",
+         "service" : "trace",
+         "status" : "SHOW",
+         "url" : "http://www.telvgg.coop/cgi-bin/trace.cgi"
+      },
+      {
+         "access_type" : "GET",
+         "action" : "",
+         "backbone" : "",
+         "city" : "",
+         "comments" : "",
+         "country" : "Argentina",
+         "email" : "",
+         "extra_params" : "dest=",
+         "homepage_url" : "http://www.telpin.com.ar/",
+         "id" : "11",
+         "input" : "",
+         "organization" : "Cooperativa Telefonica Pinamar Ltda (AS14232)",
+         "path" : "",
+         "service" : "trace",
+         "status" : "SHOW",
+         "url" : "http://tools.telpin.com.ar/cgi-bin/traceroute"
       }
+
+
    ]
 }

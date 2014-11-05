@@ -1,0 +1,19 @@
+      {
+         "access_type" : "GET",
+         "action" : "",
+         "backbone" : "",
+         "city" : "",
+         "comments" : "",
+         "country" : "",
+         "email" : "",
+         "extra_params" : "",
+         "homepage_url" : "",
+         "id" : "",
+         "input" : "",
+         "organization" : "",
+         "path" : "",
+         "service" : "trace",  # ping
+         "status" : "SHOW",
+         "url" : ""
+      }
+
