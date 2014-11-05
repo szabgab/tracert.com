@@ -194,15 +194,7 @@ sub run_traceroute {
 
 	my %gws = map { $_ => 1 } @gws;
 
-	my $data = Tracert::DB->new( root => root() )->load_data();
-	my @gateways = grep { $gws{ $_->{id} } } @{ $data->{gateways} };
-
-	foreach my $gw (@gateways) {
-		$gw->{request}
-			= "$gw->{url}$gw->{path}?"
-			. ( $gw->{extra_params} || '' )
-			. $host;
-	}
+	my @gateways = grep { $gws{ $_->{id} } } _get_gateways($host);
 
 	my $top_frame_height = 15;
 	my $frame_height
@@ -221,25 +213,35 @@ sub run_traceroute {
 		{ frames => \@gateways, host => $host, rows => $rows } );
 }
 
+sub _get_gateways {
+	my ($host) = @_;
+	my $data = Tracert::DB->new( root => root() )->load_data();
+	foreach my $gw ( @{ $data->{gateways} } ) {
+		$gw->{request}
+			= "$gw->{url}$gw->{path}?"
+			. ( $gw->{extra_params} || '' )
+			. $host;
+	}
+	return grep { $_->{status} eq 'SHOW' } @{ $data->{gateways} };
+}
+
 sub traceroute {
 	my ( $env, $request, $service ) = @_;
 
-	my $host = $request->param('t');
+	my $host = _client($env);
 
 	#my ($out) = Tracert::Exe->trace( host => $host, lines => 5 );
 
-	my $data = Tracert::DB->new( root => root() )->load_data();
-	my @gws = sort { $a->{country} cmp $b->{country} } @{ $data->{gateways} };
+	my @gws = sort { $a->{country} cmp $b->{country} } _get_gateways($host);
 	return template(
 		'traceroute',
 		{
 			title => ( $service eq 'trace' ? 'Traceroute' : 'Pint' ),
 			gateways => \@gws,
 			service  => $service,
-			host     => _client($env),
+			host     => $host,
 
-			#			host  => $host,
-			#			out   => $out,
+			#out   => $out,
 		}
 	);
 }

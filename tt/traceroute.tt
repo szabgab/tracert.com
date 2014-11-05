@@ -51,7 +51,9 @@
                      <% IF s.service == service %>
                         <div class="ui checkbox item field">
                            <input type="checkbox"  name="gw" id="gw_<% s.id %>" class="gw" value="<% s.id %>">
-                           <label for="gw_<% s.id %>"><% s.country %> - <a href="<% s.homepage_url %>"><% s.organization %></a></label>
+                           <label for="gw_<% s.id %>"><% s.country %> - <a href="<% s.homepage_url %>"><% s.organization %></a>
+                           <a href="<% s.request %>">R</a>
+                           </label>
                         </div>
                      <% END %>
                    <% END %>
