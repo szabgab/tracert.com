@@ -5,13 +5,13 @@ verbose = 11
 theme = core
 
 [TestingAndDebugging::RequireUseStrict]
-#equivalent_modules = Moo Dancer
-equivalent_modules = MooseX::Singleton
+equivalent_modules = Moo
+#equivalent_modules = MooseX::Singleton Dancer
 
 [TestingAndDebugging::RequireUseWarnings]
 severity = 5
-equivalent_modules = MooseX::Singleton
-#equivalent_modules = Moo Dancer
+#equivalent_modules = MooseX::Singleton
+equivalent_modules = Moo
 
 #[-ControlStructures::ProhibitPostfixControls]
 #[-Documentation::RequirePodLinksIncludeText]
