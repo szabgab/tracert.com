@@ -7,6 +7,5 @@ use Cwd qw(abs_path);
 use lib 'lib';
 
 use Tracert;
-Tracert->new(root => abs_path('.'))->check_sites;
-
+Tracert->new( root => abs_path('.') )->check_sites;
 

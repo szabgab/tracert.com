@@ -177,7 +177,7 @@ sub traceroute {
 
 	#my ($out) = Tracert::Exe->trace( host => $host, lines => 5 );
 
-	my $data = Tracert::DB->new(root => root())->load_data();
+	my $data = Tracert::DB->new( root => root() )->load_data();
 	my @gws = sort { $a->{country} cmp $b->{country} } @{ $data->{gateways} };
 	return template(
 		'traceroute',

@@ -5,19 +5,20 @@ use Data::Dumper qw(Dumper);
 
 use Tracert::DB;
 
-has root => (is => 'ro', required => 1);
-
+has root => ( is => 'ro', required => 1 );
 
 sub check_sites {
 	my ($self) = @_;
 
-	my $data = Tracert::DB->new(root => $self->root)->load_data();
+	my $data = Tracert::DB->new( root => $self->root )->load_data();
+
 	#die Dumper $data;
 
-	foreach my $gw (@{ $data->{gateways} }) {
-		if ($gw->{status} eq 'SHOW') {
+	foreach my $gw ( @{ $data->{gateways} } ) {
+		if ( $gw->{status} eq 'SHOW' ) {
 			my $url = "$gw->{url}$gw->{path}";
-			say "$gw->{access_type} $url '$gw->{input}'  '$gw->{extra_params}'";
+			say
+				"$gw->{access_type} $url '$gw->{input}'  '$gw->{extra_params}'";
 
 			next;
 		}
@@ -25,9 +26,7 @@ sub check_sites {
 		say "Invalid status $gw->{status}";
 	}
 
-	
 }
-
 
 1;
 
