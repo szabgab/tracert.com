@@ -1,32 +1,32 @@
 =title Other resources for Internet research
 
-Traceroute monitoring system<br>
-<a href=http://www.visualroute.com/>Visual Route</a> desktop tool to see how your computers is reaching other sites.<br>
+<h2>Traceroute monitoring system</h2>
 
-Commercial Performance Monitoring Systems<br>
-a href=http://www.keynote.com/>Keynote</a> is definietly the market leader in Performance monitoring <br>
+<ul>
+<li><a href="http://www.visualroute.com/">Visual Route</a> desktop tool to see how your computers is reaching other sites.</li>
+</ul>
 
-Other resources
-<a href=http://Network-Tools.com>Network-Tools.com</a><br>
-    <br>
-  <a href=http://dir.yahoo.com/Computers_and_Internet/Communications_and_Networking/Software/Networking/Utilities/Traceroute/>List at Yahoo</a> <br>
+<h2>Commercial Performance Monitoring Systems</h2>
 
-  <a href=http://www.traceroute.org>Traceroute.Org</a>
-     maintained by Thomas Kernen is probably the best collection I have seen.
-     It is well organized, I found quite a lot of new sites on this list. 
+<ul>
+  <li><a href="http://www.keynote.com/">Keynote</a></li>
+</ul>
 
-  <a href=http://tech.c3.hu/tracetoc3.htm>C3</a> 
-  a Hungarian list. All pointed back to the maintaner. 
+<h2>Other resources</h2>
 
-  <a href=http://www.arin.net>Arin</a> American Registry for Internet Numbers - if you want to know
-  who 'owns' an IP address.
+<ul>
+  <li><a href="http://Network-Tools.com/">Network-Tools.com</a></li>
+  <li><a href="http://dir.yahoo.com/Computers_and_Internet/Communications_and_Networking/Software/Networking/Utilities/Traceroute/">List at Yahoo</a></li>
+  <li><a href=http://www.traceroute.org>Traceroute.Org</a>
+     maintained by Thomas Kernen. It was probably the best collection I have seen.
+     It is well organized, I found quite a lot of new sites on this list, but it has not been maintained for quite some time now and a lot of
+     the hosts are not responding any more.</li>
+  <li><a href="http://tech.c3.hu/tracetoc3.htm">C3</a> another list.</li>
+  <li><a href="http://www.arin.net/">Arin</a> American Registry for Internet Numbers - if you want to know
+  who 'owns' an IP address.</li>
+  <li><a href="http://www.ripe.net/">Ripe</a> Network Coordination Center (Europe)</li>
+  <li><a href="http://www.iana.org/">Iana</a> - Internet Assigned Numbers Authority</li>
+  <li><a href="http://www.apnic.org/">Apnic - Aisa Pacific Network Information Centre</a></li>
+</ul>
 
-
-  <a href=http://www.ripe.net>Ripe</a> Network Coordination Center (Europe)
-
-  <a href=http://www.iana.org>Iana</a>
-
-  <a href=http://www.apnic.org>Apnic - Aisa Pacific Network Information Centre</a>
-
-  <a href=http://www.oreilly.com/catalog/nettroubletools/chapter/ch04.html>O'Reilly - Network Troubleshooting Tools</a>
 
