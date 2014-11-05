@@ -11,7 +11,7 @@
                    <ul>
                    <% FOR s IN gateways %>
                      <% IF s.service == service %>
-                        <li><% s.country %> - <a href="http://<% s.homepage_url %><% s.path %>"><% s.organization %></a></li>
+                        <li><% s.country %> - <a href="<% s.homepage_url %><% s.path %>"><% s.organization %></a></li>
                      <% END %>
                    <% END %>
                    </ul>

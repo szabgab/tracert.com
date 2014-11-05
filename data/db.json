@@ -9,14 +9,14 @@
          "country" : "Greece",
          "email" : "webmaster@@@ntua.gr",
          "extra_params" : "name=",
-         "homepage_url" : "www.ntua.gr",
+         "homepage_url" : "http://www.ntua.gr",
          "id" : "9",
          "input" : "",
          "organization" : "NTUA - National Technical University of Athens",
          "path" : "/cgi-bin/rtracert",
          "service" : "trace",
          "status" : "SHOW",
-         "url" : "www.ntua.gr"
+         "url" : "http://www.ntua.gr"
       },
       {
          "access_type" : "GET",
@@ -27,14 +27,14 @@
          "country" : "Switzerland",
          "email" : "webmaster@@@switch.ch",
          "extra_params" : "destination=",
-         "homepage_url" : "www.switch.ch",
+         "homepage_url" : "http://www.switch.ch",
          "id" : "36",
          "input" : "",
          "organization" : "SWITCH - Swiss Academic & Research Network",
          "path" : "/cgi-bin/network/nph-traceroute",
          "service" : "trace",
          "status" : "SHOW",
-         "url" : "www.switch.ch"
+         "url" : "http://www.switch.ch"
       },
       {
          "access_type" : "GET",
@@ -45,14 +45,14 @@
          "country" : "USA",
          "email" : "webmaster@@@getnet.com",
          "extra_params" : "",
-         "homepage_url" : "www.getnet.com",
+         "homepage_url" : "http://www.getnet.com",
          "id" : "50",
          "input" : "hostname",
          "organization" : "GetNet - ISP",
          "path" : "/cgi-bin/trace",
          "service" : "trace",
          "status" : "SHOW",
-         "url" : "www.getnet.com"
+         "url" : "http://www.getnet.com"
       },
       {
          "access_type" : "GET",
@@ -63,14 +63,14 @@
          "country" : "USA",
          "email" : "webmaster@@@slac.stanford.edu",
          "extra_params" : "",
-         "homepage_url" : "www.slac.stanford.edu",
+         "homepage_url" : "http://www.slac.stanford.edu",
          "id" : "51",
          "input" : "",
          "organization" : "SLAC - Stanford Linear Accelerator Center",
          "path" : "/cgi-bin/nph-traceroute.pl",
          "service" : "trace",
          "status" : "SHOW",
-         "url" : "www.slac.stanford.edu"
+         "url" : "http://www.slac.stanford.edu"
       },
       {
          "access_type" : "GET",
@@ -81,14 +81,14 @@
          "country" : "USA",
          "email" : "webmaster@@@yahoo.com",
          "extra_params" : "",
-         "homepage_url" : "www.yahoo.com",
+         "homepage_url" : "http://www.yahoo.com",
          "id" : "58",
          "input" : "",
          "organization" : "Yahoo",
          "path" : "/cgi-bin/trace.sh",
          "service" : "trace",
          "status" : "SHOW",
-         "url" : "net.yahoo.com"
+         "url" : "http://net.yahoo.com"
       },
       {
          "access_type" : "GET",
@@ -99,14 +99,14 @@
          "country" : "USA",
          "email" : "webmaster@@@gip.net",
          "extra_params" : "",
-         "homepage_url" : "www.gip.net",
+         "homepage_url" : "http://www.gip.net",
          "id" : "79",
          "input" : "",
          "organization" : "Global One",
          "path" : "/cgi-bin/testtraceroute.sh",
          "service" : "trace",
          "status" : "SHOW",
-         "url" : "www.gip.net"
+         "url" : "http://www.gip.net"
       },
       {
          "access_type" : "GET",
@@ -117,14 +117,14 @@
          "country" : "Australia",
          "email" : "webmaster@@@telstra.net",
          "extra_params" : "",
-         "homepage_url" : "www.telstra.net",
+         "homepage_url" : "http://www.telstra.net",
          "id" : "213",
          "input" : "",
          "organization" : "Telstra",
          "path" : "/cgi-bin/trace",
          "service" : "trace",
          "status" : "SHOW",
-         "url" : "www.telstra.net"
+         "url" : "http://www.telstra.net"
       },
       {
          "access_type" : "GET",
@@ -135,14 +135,14 @@
          "country" : "USA",
          "email" : "ralphw@@@mac-mail1.interworld.ne",
          "extra_params" : "DEST=",
-         "homepage_url" : "www.interworld.net",
+         "homepage_url" : "http://www.interworld.net",
          "id" : "230",
          "input" : "",
          "organization" : "InterWorld Communications",
          "path" : "/cgi-bin/nph-traceroute.cgi",
          "service" : "trace",
          "status" : "SHOW",
-         "url" : "www.interworld.net"
+         "url" : "http://www.interworld.net"
       },
       {
          "access_type" : "GET",
@@ -153,14 +153,14 @@
          "country" : "USA",
          "email" : "info@@@his.com",
          "extra_params" : "",
-         "homepage_url" : "www.his.com",
+         "homepage_url" : "http://www.his.com",
          "id" : "257",
          "input" : "HName",
          "organization" : "Heller Information Services",
          "path" : "/cgi-bin/ping",
          "service" : "ping",
          "status" : "SHOW",
-         "url" : "www.his.com"
+         "url" : "http://www.his.com"
       }
    ]
 }
