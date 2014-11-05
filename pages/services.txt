@@ -1,3 +1,5 @@
+=title Services
+
 <p>
 <a href="/ping">Ping</a> (Multiple Ping Gateway)
 Running ping from several locations in the world 

@@ -1,4 +1,4 @@
-<h2>Frequently Asked Questions</h2>
+=title Tracert FAQ - Frequently Asked Questions
 
 <p>
 <b>Is there a version of traceroute for Win95/Win98/Me/2000 ?</b><br>

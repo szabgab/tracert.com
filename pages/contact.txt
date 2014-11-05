@@ -1,3 +1,5 @@
+=title Contact information
+
 Contact information
 Person:	Gabor Szabo
 Phone:	+972-(0)54-4624648

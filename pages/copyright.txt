@@ -1,0 +1,6 @@
+=title Copyright (C) Tracert 1998-2014
+
+
+<p>
+All information and graphics are the property of Tracert.com Copying or using this information requires written permission from Tracert.com except in the cases where explicitly stated different.
+</p>
