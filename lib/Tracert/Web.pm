@@ -89,29 +89,23 @@ sub run {
 		my $request   = Plack::Request->new($env);
 		my $path_info = $request->path_info;
 
-		# these two extra env variables are passed by Nginx
-		my $client
-			= $env->{HTTP_X_REAL_IP}
-			|| $env->{HTTP_X_FORWARDED_HOST}
-			|| $request->remote_host
-			|| $request->address;
-
 		if ( $path_info eq '/' ) {
 
 			return template(
 				'index',
 				{
 					title  => 'Tracert - running traceroute world wide',
-					client => $client
+					client => _client($env),
+
 				}
 			);
 		}
 
 		if ( $path_info eq '/traceroute' ) {
-			return traceroute( $request, 'trace' );
+			return traceroute( $env, $request, 'trace' );
 		}
 		if ( $path_info eq '/ping' ) {
-			return traceroute( $request, 'ping' );
+			return traceroute( $env, $request, 'ping' );
 		}
 		if ( $path_info eq '/resolver' ) {
 			return resolver($request);
@@ -171,7 +165,7 @@ sub resolver {
 }
 
 sub traceroute {
-	my ( $request, $service ) = @_;
+	my ( $env, $request, $service ) = @_;
 
 	my $host = $request->param('t');
 
@@ -185,11 +179,25 @@ sub traceroute {
 			title => ( $service eq 'trace' ? 'Traceroute' : 'Pint' ),
 			gateways => \@gws,
 			service  => $service,
+			host     => _client($env),
 
 			#			host  => $host,
 			#			out   => $out,
 		}
 	);
+}
+
+sub _client {
+	my ($env) = @_;
+
+	my $request = Plack::Request->new($env);
+
+	# these two extra env variables are passed by Nginx
+	return
+		   $env->{HTTP_X_REAL_IP}
+		|| $env->{HTTP_X_FORWARDED_HOST}
+		|| $request->remote_host
+		|| $request->address;
 }
 
 sub template {
