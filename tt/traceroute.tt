@@ -2,44 +2,74 @@
   title = "Traceroute from around the world"
 %>
 
+<div class="ui small modal" id="zero">
+  <div class="header">
+   Tracert
+  </div>
+  <div class="content">
+    <div class="left">
+      You need to select at least one starting point.
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui button">
+      OK
+    </div>
+  </div>
+</div>
+
+<div class="ui small modal" id="toomany">
+  <div class="header">
+   Tracert
+  </div>
+  <div class="content">
+    <div class="left">
+      More than 3 starting points won't look good.
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui button">
+      OK
+    </div>
+  </div>
+</div>
+
+
+
     <div class="row">
         <div class="column">
             <div class="ui message main">
                 <h1 class="ui header"><% template.title %></h1>
                 <p>
+<form id="form" action="/run">
                    <div class="ui input">
-                      <input name="host" value="<% host %>" />
+                      <input id="host" name="host" value="<% host %>" />
                    </div>
 
                    <div class="ui link list">
                    <% FOR s IN gateways %>
                      <% IF s.service == service %>
-                        <div class="ui checkbox item">
-                           <input type="checkbox" name="gw" value="">
-                           <label><% s.country %> - <a href="<% s.homepage_url %>"><% s.organization %></a></label>
+                        <div class="ui checkbox item field">
+                           <input type="checkbox"  name="gw" id="gw_<% s.id %>" class="gw" value="<% s.id %>">
+                           <label for="gw_<% s.id %>"><% s.country %> - <a href="<% s.homepage_url %>"><% s.organization %></a></label>
                         </div>
                      <% END %>
                    <% END %>
                    </div>
-
-                   <div class="ui button">
+                   <div class="ui button" id="run">
                      Run
                    </div>
-                   
+</form>
                    <!--
                    <% INCLUDE 'incl/traceroute_form.tt' %>
                    -->
-                   
                    <!--
-                   
                    <% IF host %>
                      Traceroute to <% host %>
-                     
                      <pre>
                      <% out %>
                      </pre>
                    <% END %>
-                   
                    -->
 
                 </p>
