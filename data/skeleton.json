@@ -12,7 +12,7 @@
          "input" : "",
          "organization" : "",
          "path" : "",
-         "service" : "trace",  # ping
+         "service" : "trace",
          "status" : "SHOW",
          "url" : ""
       }
