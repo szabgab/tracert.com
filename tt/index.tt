@@ -7,7 +7,7 @@
             <div class="ui message main">
                 <h1 class="ui header"><% template.title %></h1>
                 <p>
-                 The <b>Tracert.com</b> site provides access to many <a href="/traceroute">tracerout</a>, <b>tracepath</b> and <a href="/ping">ping</a> gateways.
+                 The <b>Tracert.com</b> site provides access to many <a href="/traceroute">traceroute</a>, <b>tracepath</b> and <a href="/ping">ping</a> gateways.
                 </p>
                 <p>
                  If you would like to check what IP address a hostname resolves to, type it in the box below:
