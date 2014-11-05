@@ -11,10 +11,17 @@ sub check_sites {
 	my ($self) = @_;
 
 	my $data = Tracert::DB->new( root => $self->root )->load_data();
+	
+	my %ids;
 
 	#die Dumper $data;
 
 	foreach my $gw ( @{ $data->{gateways} } ) {
+		if ($ids{ $gw->{id} }) {
+			warn "Duplicate ID '$gw->{id}'\n";
+		}
+		$ids{ $gw->{id} } = $gw;
+
 		if ( $gw->{status} eq 'SHOW' ) {
 			my $url = "$gw->{url}$gw->{path}";
 			say
