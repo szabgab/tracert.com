@@ -7,13 +7,24 @@
             <div class="ui message main">
                 <h1 class="ui header"><% template.title %></h1>
                 <p>
-                   <ul>
+                   <div class="ui input">
+                      <input name="host" value="<% host %>" />
+                   </div>
+
+                   <div class="ui link list">
                    <% FOR s IN gateways %>
                      <% IF s.service == service %>
-                        <li><% s.country %> - <a href="<% s.homepage_url %><% s.path %>"><% s.organization %></a></li>
+                        <div class="ui checkbox item">
+                           <input type="checkbox" name="gw" value="">
+                           <label><% s.country %> - <a href="<% s.homepage_url %>"><% s.organization %></a></label>
+                        </div>
                      <% END %>
                    <% END %>
-                   </ul>
+                   </div>
+
+                   <div class="ui button">
+                     Run
+                   </div>
                    
                    <!--
                    <% INCLUDE 'incl/traceroute_form.tt' %>
