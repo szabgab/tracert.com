@@ -20,6 +20,7 @@ use Template;
 use Time::Local qw(timegm);
 
 use Tracert::Exe;
+use Tracert::DB;
 
 our $VERSION = '0.01';
 
@@ -176,7 +177,7 @@ sub traceroute {
 
 	#my ($out) = Tracert::Exe->trace( host => $host, lines => 5 );
 
-	my $data = load_data();
+	my $data = Tracert::DB->new(root => root())->load_data();
 	my @gws = sort { $a->{country} cmp $b->{country} } @{ $data->{gateways} };
 	return template(
 		'traceroute',
@@ -189,15 +190,6 @@ sub traceroute {
 			#			out   => $out,
 		}
 	);
-}
-
-sub load_data {
-
-	my $root = root();
-	my $path = "$root/data/db.json";
-	my $data = from_json path($path)->slurp_utf8;
-
-	#die Dumper $data;
 }
 
 sub template {
