@@ -811,8 +811,35 @@
          "status" : "SHOW",
          "url" : "http://noc.interscholz.net/net2/",
          "action" : ""
+      },
+      {
+         "access_type" : "POST",
+         "city" : "",
+         "comments" : "",
+         "country" : "Greece",
+         "email" : "",
+         "homepage_url" : "http://aueb.gr/",
+         "id" : "62",
+         "organization" : "Athens University of Economics and Business",
+         "service" : "traceroute",
+         "status" : "SHOW",
+         "url" : "https://foss.aueb.gr/network_tools/index.php",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Greece",
+         "email" : "",
+         "homepage_url" : "http://www.uoi.gr/",
+         "id" : "63",
+         "organization" : "University of Ioannina",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://protagoras.edu.uoi.gr/balomenos/utils/traceroute/trace.php",
+         "action" : "http://protagoras.edu.uoi.gr/balomenos/utils/traceroute/trace.php?submit=Traceroute%21&host="
       }
-
 
    ]
 }
