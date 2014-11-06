@@ -9,7 +9,7 @@
          "homepage_url" : "http://www.ntua.gr",
          "id" : "1",
          "organization" : "NTUA - National Technical University of Athens",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://www.ntua.gr/cgi-bin/rtracert",
          "action" : "http://www.ntua.gr/cgi-bin/rtracert?name="
@@ -23,7 +23,7 @@
          "homepage_url" : "http://www.switch.ch",
          "id" : "2",
          "organization" : "SWITCH - Swiss Academic & Research Network",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "SHOW",
          "url" : "http://www.switch.ch/network/tools/traceroute/",
          "action" : "http://www.switch.ch/network/tools/traceroute/?destination="
@@ -37,7 +37,7 @@
          "homepage_url" : "http://www.slac.stanford.edu",
          "id" : "4",
          "organization" : "SLAC - Stanford Linear Accelerator Center",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://www.slac.stanford.edu/cgi-bin/nph-traceroute.pl",
          "action" : "http://www.slac.stanford.edu/cgi-bin/nph-traceroute.pl?"
@@ -51,7 +51,7 @@
          "homepage_url" : "http://www.telstra.net",
          "id" : "7",
          "organization" : "Telstra",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://www.telstra.net/cgi-bin/trace",
          "action" : "http://www.telstra.net/cgi-bin/trace?destination="
@@ -65,7 +65,7 @@
          "homepage_url" : "http://www.interworld.net",
          "id" : "8",
          "organization" : "InterWorld Communications",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "HIDE",
          "url" : "http://www.interworld.net/cgi-bin/nph-traceroute.cgi",
          "action" : "http://www.interworld.net/cgi-bin/nph-traceroute.cgi?DEST="
@@ -93,7 +93,7 @@
          "homepage_url" : "http://www.telvgg.coop/",
          "id" : "10",
          "organization" : "Cooperativa Telefonica de Villa Gobernador Galvez Ltda",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://www.telvgg.coop/cgi-bin/trace.cgi",
          "action" : "http://www.telvgg.coop/cgi-bin/trace.cgi?"
@@ -107,7 +107,7 @@
          "homepage_url" : "http://www.telpin.com.ar/",
          "id" : "11",
          "organization" : "Cooperativa Telefonica Pinamar Ltda ",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://tools.telpin.com.ar/cgi-bin/traceroute",
          "action" : "http://tools.telpin.com.ar/cgi-bin/traceroute?dest="
@@ -121,7 +121,7 @@
          "homepage_url" : "http://www.viafacil.com/",
          "id" : "12",
          "organization" : "Viafacil",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://baires02.com.ar/traceroute/index.php",
          "action" : "http://baires02.com.ar/traceroute/index.php?submit=Traceroute&host="
@@ -135,7 +135,7 @@
          "homepage_url" : "http://services.tele2net.at/",
          "id" : "13",
          "organization" : "Tele2",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://services.tele2net.at/cgi-bin/traceroute.cgi",
          "action" : "http://services.tele2net.at/cgi-bin/traceroute.cgi?dest="
@@ -149,7 +149,7 @@
          "homepage_url" : "http://nemox.net/",
          "id" : "14",
          "organization" : "nemox.net",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://nemox.net/traceroute/index.pl",
          "action" : "http://nemox.net/traceroute/index.pl?t="
@@ -163,7 +163,7 @@
          "homepage_url" : "http://www.globedom.com/",
          "id" : "15",
          "organization" : "Globedom",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "SHOW",
          "url" : "http://www.globedom.com/cgi-bin/trace",
          "action" : "http://www.globedom.com/cgi-bin/trace"
@@ -177,7 +177,7 @@
          "homepage_url" : "http://www.lir.at/",
          "id" : "16",
          "organization" : "Crossip communications Gmbh  LIR - Local Internet Registry",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "SHOW",
          "url" : "http://www.lir.at/netquery/",
          "action" : "http://www.lir.at/netquery/"
@@ -191,7 +191,7 @@
          "homepage_url" : "http://www.activecloud.ru/",
          "id" : "17",
          "organization" : "Beltelecom - Acvive Cloud",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://lg.atservers.com/",
          "action" : "http://by104.activeby.net/lg/?method=trace&host="
@@ -205,7 +205,7 @@
          "homepage_url" : "http://www.activecloud.ru/",
          "id" : "18",
          "organization" : "Beltelecom - Acvive Cloud",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://lg.atservers.com/",
          "action" : "http://eu104.activeby.net/lg/?method=trace&host="
@@ -219,7 +219,7 @@
          "homepage_url" : "http://www.rack66.com/",
          "id" : "19",
          "organization" : "Rack66 ",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://www.rack66.com/?p=traceroutepage",
          "action" : "http://www.rack66.com/trace.php?&submit=Traceroute%21&host="
@@ -233,7 +233,7 @@
          "homepage_url" : "http://www.rederio.br/",
          "id" : "20",
          "organization" : "Rede Rio de Computadores",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://guanabara.rederio.br/cgi-bin/nph-traceroute",
          "action" : "http://guanabara.rederio.br/cgi-bin/nph-traceroute?function=traceroute&target="
@@ -247,7 +247,7 @@
          "homepage_url" : "http://registro.br/",
          "id" : "21",
          "organization" : "Registro.br",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "SHOW",
          "url" : "http://registro.br/cgi-bin/nicbr/trt",
          "action" : ""
@@ -261,7 +261,7 @@
          "homepage_url" : "http://www.darkspace.info/",
          "id" : "22",
          "organization" : "FS Net",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://www.darkspace.info/utils/lg/",
          "action" : "http://www.darkspace.info/utils/lg/index.php?request=trace&submit=ok&host="
@@ -275,7 +275,7 @@
          "homepage_url" : "http://www.triumf.ca/",
          "id" : "23",
          "organization" : "Triumf ",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "SHOW",
          "url" : "http://sitka.triumf.ca/cgi-bin/traceroute-tables",
          "action" : ""
@@ -289,7 +289,7 @@
          "homepage_url" : "http://carleton.ca/",
          "id" : "24",
          "organization" : "Carleton University",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://traceroute.physics.carleton.ca/cgi-bin/traceroute.pl",
          "action" : "http://traceroute.physics.carleton.ca/cgi-bin/traceroute.pl?target="
@@ -303,7 +303,7 @@
          "homepage_url" : "http://network-tools.com/",
          "id" : "25",
          "organization" : "Network Tools",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://network-tools.com/",
          "action" : "http://network-tools.com/default.asp?prog=trace&host="
@@ -331,7 +331,7 @@
          "homepage_url" : "http://www.tera-byte.com/",
          "id" : "27",
          "organization" : "Tera-Byte",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://www.tera-byte.com/cgi-bin/nph-trace",
          "action" : "http://www.tera-byte.com/cgi-bin/nph-trace?"
@@ -345,7 +345,7 @@
          "homepage_url" : "http://4web.ca/",
          "id" : "28",
          "organization" : "4Web.ca",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://monitor.4web.net/cgi-bin/nph-trace.pl",
          "action" : "http://monitor.4web.net/cgi-bin/nph-trace.pl?trace_to="
@@ -359,7 +359,7 @@
          "homepage_url" : "http://www.utfsm.cl/",
          "id" : "29",
          "organization" : "Universidad Tecnica Federico Santa Maria",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://redes.dcsc.utfsm.cl/nph-traceroute.cgi",
          "action" : "http://redes.dcsc.utfsm.cl/nph-traceroute.cgi?"
@@ -373,7 +373,7 @@
          "homepage_url" : "http://prime-tel.net/",
          "id" : "30",
          "organization" : "ThunderWorx (Prime Tel)",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://noc.thunderworx.net/cgi-bin/public/traceroute.pl",
          "action" : "http://noc.thunderworx.net/cgi-bin/public/traceroute.pl?target="
@@ -401,7 +401,7 @@
          "homepage_url" : "http://www.snlink.net/",
          "id" : "32",
          "organization" : "SilesNet ",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://www.snlink.net/",
          "action" : "http://www.snlink.net/?p=0&addr="
@@ -429,7 +429,7 @@
          "homepage_url" : "http://www.ropak.cz/",
          "id" : "34",
          "organization" : "Ropacek ",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "SHOW",
          "url" : "http://www.ropak.cz/trace.php",
          "action" : ""
@@ -443,7 +443,7 @@
          "homepage_url" : "http://www.nsmon.com/",
          "id" : "35",
          "organization" : "NSMon - Network Server Monitor",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "SHOW",
          "url" : "http://www.nsmon.com/traceroute",
          "action" : ""
@@ -457,7 +457,7 @@
          "homepage_url" : "http://www.motobit.com/",
          "id" : "36",
          "organization" : "Motobit",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://www.pstruh.cz/util/trace.asp",
          "action" : "http://www.pstruh.cz/util/trace.asp?Host="
@@ -471,7 +471,7 @@
          "homepage_url" : "http://azero.dk/",
          "id" : "37",
          "organization" : "Azero",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "SHOW",
          "url" : "http://azero.dk/support/vaerktoej/traceroute/default.asp",
          "action" : ""
@@ -485,7 +485,7 @@
          "homepage_url" : "http://www.comx.dk/",
          "id" : "38",
          "organization" : "ComX Networks",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://lg.cxnet.dk/cgi-bin/bgplg",
          "action" : "http://lg.cxnet.dk/cgi-bin/bgplg?cmd=traceroute&req="
@@ -499,7 +499,7 @@
          "homepage_url" : "http://sdv.fr/",
          "id" : "39",
          "organization" : "SdV Plurimedia",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://traceroute.sdv.fr/",
          "action" : "http://traceroute.sdv.fr/index.php?v6=0&host="
@@ -527,7 +527,7 @@
          "homepage_url" : "http://linkbynet.com/",
          "id" : "41",
          "organization" : "Linkbynet",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "SHOW",
          "url" : "http://support.linkbynet.com/Default.aspx?Page=ping_tracert&AspxAutoDetectCookieSupport=1",
          "action" : ""
@@ -541,7 +541,7 @@
          "homepage_url" : "http://www.wz-hebergement.com/",
          "id" : "42",
          "organization" : "WZ-Conseil",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "SHOW",
          "url" : "http://www.wz-hebergement.com/traceroute/",
          "action" : ""
@@ -555,7 +555,7 @@
          "homepage_url" : "http://www.han.de/",
          "id" : "43",
          "organization" : "HanNet e.V.",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://www.han.de/cgi-bin/nph-trace.cgi",
          "action" : "http://www.han.de/cgi-bin/nph-trace.cgi?addr="
@@ -569,7 +569,7 @@
          "homepage_url" : "https://www.space.net/",
          "id" : "44",
          "organization" : "SpaceNet ",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "SHOW",
          "url" : "https://www.space.net/traceroute/",
          "action" : ""
@@ -583,7 +583,7 @@
          "homepage_url" : "http://www.traceroute.eu/",
          "id" : "45",
          "organization" : "Traceroute.eu",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "SHOW",
          "url" : "http://www.traceroute.eu/traceroute/",
          "action" : ""
@@ -597,7 +597,7 @@
          "homepage_url" : "http://www.heise.de/",
          "id" : "46",
          "organization" : "Plus-Line",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "SHOW",
          "url" : "http://www.heise.de/netze/tools/traceroute",
          "action" : ""
@@ -611,7 +611,7 @@
          "homepage_url" : "https://www.regfish.de/",
          "id" : "47",
          "organization" : "Regfish",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "SHOW",
          "url" : "https://www.regfish.de/noc/traceroute",
          "action" : ""
@@ -625,7 +625,7 @@
          "homepage_url" : "http://www.internetwire.de/",
          "id" : "48",
          "organization" : "InterNetWire",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "SHOW",
          "url" : "http://www.internetwire.de/de/service/support/support-tools/traceroute/",
          "action" : ""
@@ -639,7 +639,7 @@
          "homepage_url" : "https://www.hosteurope.de/",
          "id" : "49",
          "organization" : "Host Europe",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://latency.hosteurope.de/lg/",
          "action" : "http://latency.hosteurope.de/lg/traceroute.cgi?mode=trace&addr="
@@ -667,7 +667,7 @@
          "homepage_url" : "http://www.graupe.de/",
          "id" : "51",
          "organization" : "TELTA Citynetz Eberswalde",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://www.graupe.de/cgi-bin/traceroute.pl",
          "action" : "http://www.graupe.de/cgi-bin/traceroute.pl?queries=3&host="
@@ -681,7 +681,7 @@
          "homepage_url" : "http://www.kloth.net/",
          "id" : "52",
          "organization" : "Kloth.Net",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "SHOW",
          "url" : "http://www.kloth.net/services/traceroute.php",
          "action" : ""
@@ -695,7 +695,7 @@
          "homepage_url" : "http://www.insode.de/",
          "id" : "53",
          "organization" : "R2Z2 Insode",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "http://traceroute.insode.de/",
          "action" : "http://traceroute.insode.de/?target7="
@@ -709,7 +709,7 @@
          "homepage_url" : "http://ipduh.com/",
          "id" : "54",
          "organization" : "IPduh.com",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "SHOW",
          "url" : "http://ipduh.com/ip/traceroute/",
          "action" : ""
@@ -723,7 +723,7 @@
          "homepage_url" : "https://gaertner.de/",
          "id" : "55",
          "organization" : "Gaertner Datensysteme",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "https://noc.gaertner.de/cgi-bin/looking-glass.cgi",
          "action" : "https://noc.gaertner.de/cgi-bin/looking-glass.cgi?type=traceroute&dest="
@@ -741,6 +741,34 @@
          "status" : "ENABLE",
          "url" : "https://noc.gaertner.de/cgi-bin/looking-glass.cgi",
          "action" : "https://noc.gaertner.de/cgi-bin/looking-glass.cgi?type=ping&dest="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Germany",
+         "email" : "",
+         "homepage_url" : "https://gaertner.de/",
+         "id" : "57",
+         "organization" : "Gaertner Datensysteme",
+         "service" : "traceroute6",
+         "status" : "ENABLE",
+         "url" : "https://noc.gaertner.de/cgi-bin/looking-glass.cgi",
+         "action" : "https://noc.gaertner.de/cgi-bin/looking-glass.cgi?type=traceroute6&dest="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Germany",
+         "email" : "",
+         "homepage_url" : "https://gaertner.de/",
+         "id" : "58",
+         "organization" : "Gaertner Datensysteme",
+         "service" : "ping6",
+         "status" : "ENABLE",
+         "url" : "https://noc.gaertner.de/cgi-bin/looking-glass.cgi",
+         "action" : "https://noc.gaertner.de/cgi-bin/looking-glass.cgi?type=ping6&dest="
       }
 
    ]

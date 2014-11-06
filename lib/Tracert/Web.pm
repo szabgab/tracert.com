@@ -113,7 +113,7 @@ sub run {
 		}
 
 		if ( $path_info eq '/traceroute' ) {
-			return traceroute( $env, $request, 'trace' );
+			return traceroute( $env, $request, 'traceroute' );
 		}
 		if ( $path_info eq '/ping' ) {
 			return traceroute( $env, $request, 'ping' );
@@ -234,7 +234,7 @@ sub traceroute {
 	return template(
 		'traceroute',
 		{
-			title => ( $service eq 'trace' ? 'Traceroute' : 'Pint' ),
+			title    => ucfirst($service) . ' from around the world',
 			gateways => \@gws,
 			service  => $service,
 			host     => $host,

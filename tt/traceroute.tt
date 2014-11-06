@@ -1,6 +1,3 @@
-<% META
-  title = "Traceroute from around the world"
-%>
 
 <div class="ui small modal" id="zero">
   <div class="header">
@@ -39,7 +36,7 @@
     <div class="row">
         <div class="column">
             <div class="ui message main">
-                <h1 class="ui header"><% template.title %></h1>
+                <h1 class="ui header"><% template.title || title %></h1>
                 <p>
 <form id="form" action="/run">
                    <div class="ui input">
