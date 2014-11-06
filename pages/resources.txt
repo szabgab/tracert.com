@@ -3,7 +3,7 @@
 <h2>Traceroute monitoring system</h2>
 
 <ul>
-<li><a href="http://www.visualroute.com/">Visual Route</a> desktop tool to see how your computers is reaching other sites.</li>
+  <li><a href="http://www.visualroute.com/">Visual Route</a> desktop tool to see how your computers is reaching other sites.</li>
 </ul>
 
 <h2>Commercial Performance Monitoring Systems</h2>
@@ -27,6 +27,23 @@
   <li><a href="http://www.ripe.net/">Ripe</a> Network Coordination Center (Europe)</li>
   <li><a href="http://www.iana.org/">Iana</a> - Internet Assigned Numbers Authority</li>
   <li><a href="http://www.apnic.org/">Apnic - Aisa Pacific Network Information Centre</a></li>
+  <li><a href="http://www.cyberciti.biz/faq/howto-test-ipv6-network-with-ping6-command/">Ping IPv6 IP Address With ping6 Command</a></li>
+</ul>
+
+
+<h2>Traceroute</h2>
+
+<ul>
+  <li><a href="http://en.wikipedia.org/wiki/Traceroute">Traceroute</a></li>
+</ul>
+
+<h2>DNS Resolution</h2>
+
+<ul>
+  <li><a href="http://hosting.intermedia.net/support/kb/?id=797">What Is DNS Propagation?</a></li>
+  <li><a href="https://www.whatsmydns.net/">What's My DNS?</a></li>
+  <li><a href="http://pcsupport.about.com/od/tipstricks/a/free-public-dns-servers.htm">List of Free and Public DNS Servers</a></li>
+  <li><a href="http://public-dns.tk/">Public DNS Server List</a></li>
 </ul>
 
 
