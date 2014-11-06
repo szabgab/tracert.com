@@ -155,8 +155,45 @@
          "service" : "trace",
          "status" : "SHOW",
          "url" : "http://www.globedom.com/cgi-bin/trace"
+      },
+      {
+         "access_type" : "POST",
+         "city" : "",
+         "comments" : "",
+         "country" : "Austria",
+         "email" : "",
+         "homepage_url" : "http://www.lir.at/",
+         "id" : "16",
+         "organization" : "Crossip communications Gmbh (AS44286) LIR - Local Internet Registry",
+         "service" : "trace",
+         "status" : "SHOW",
+         "url" : "http://www.lir.at/netquery/"
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "http://lg.atservers.com/",
+         "country" : "Belarus",
+         "email" : "",
+         "homepage_url" : "http://www.activecloud.ru/",
+         "id" : "17",
+         "organization" : "Beltelecom - Acvive Cloud",
+         "service" : "trace",
+         "status" : "ENABLE",
+         "url" : "http://by104.activeby.net/lg/?method=trace&host="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "http://lg.atservers.com/",
+         "country" : "Belarus",
+         "email" : "",
+         "homepage_url" : "http://www.activecloud.ru/",
+         "id" : "18",
+         "organization" : "Beltelecom - Acvive Cloud",
+         "service" : "trace",
+         "status" : "ENABLE",
+         "url" : "http://eu104.activeby.net/lg/?method=trace&host="
       }
-
-
    ]
 }
