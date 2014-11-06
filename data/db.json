@@ -391,7 +391,106 @@
          "status" : "ENABLE",
          "url" : "http://noc.thunderworx.net/cgi-bin/public/ping.pl",
          "action" : "http://noc.thunderworx.net/cgi-bin/public/ping.pl?target="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Czech Republic",
+         "email" : "",
+         "homepage_url" : "http://www.snlink.net/",
+         "id" : "32",
+         "organization" : "SilesNet ",
+         "service" : "trace",
+         "status" : "ENABLE",
+         "url" : "http://www.snlink.net/",
+         "action" : "http://www.snlink.net/?p=0&addr="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Czech Republic",
+         "email" : "",
+         "homepage_url" : "http://www.snlink.net/",
+         "id" : "33",
+         "organization" : "SilesNet ",
+         "service" : "ping",
+         "status" : "ENABLE",
+         "url" : "http://www.snlink.net/",
+         "action" : "http://www.snlink.net/?p=1&addr="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "Has captcha",
+         "country" : "Czech Republic",
+         "email" : "",
+         "homepage_url" : "http://www.ropak.cz/",
+         "id" : "34",
+         "organization" : "Ropacek ",
+         "service" : "trace",
+         "status" : "SHOW",
+         "url" : "http://www.ropak.cz/trace.php",
+         "action" : ""
+      },
+      {
+         "access_type" : "POST",
+         "city" : "",
+         "comments" : "",
+         "country" : "Czech Republic",
+         "email" : "",
+         "homepage_url" : "http://www.nsmon.com/",
+         "id" : "35",
+         "organization" : "NSMon - Network Server Monitor",
+         "service" : "trace",
+         "status" : "SHOW",
+         "url" : "http://www.nsmon.com/traceroute",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Czech Republic",
+         "email" : "",
+         "homepage_url" : "http://www.motobit.com/",
+         "id" : "36",
+         "organization" : "Motobit",
+         "service" : "trace",
+         "status" : "ENABLE",
+         "url" : "http://www.pstruh.cz/util/trace.asp",
+         "action" : "http://www.pstruh.cz/util/trace.asp?Host="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "It might just need a few extra parameters to work from here.",
+         "country" : "Denmark",
+         "email" : "",
+         "homepage_url" : "http://azero.dk/",
+         "id" : "37",
+         "organization" : "Azero",
+         "service" : "trace",
+         "status" : "SHOW",
+         "url" : "http://azero.dk/support/vaerktoej/traceroute/default.asp",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Denmark",
+         "email" : "",
+         "homepage_url" : "http://www.comx.dk/",
+         "id" : "38",
+         "organization" : "ComX Networks",
+         "service" : "trace",
+         "status" : "ENABLE",
+         "url" : "http://lg.cxnet.dk/cgi-bin/bgplg",
+         "action" : "http://lg.cxnet.dk/cgi-bin/bgplg?cmd=traceroute&req="
       }
+
 
    ]
 }
