@@ -50,9 +50,9 @@
                    <% FOR s IN gateways %>
                      <% IF s.service == service %>
                         <div class="ui checkbox item field">
-                           <input type="checkbox"  name="gw" id="gw_<% s.id %>" class="gw" value="<% s.id %>">
+                           <input type="checkbox"  name="gw" id="gw_<% s.id %>" <% IF s.status == 'SHOW' %>disabled<% END %> class="gw" value="<% s.id %>">
                            <label for="gw_<% s.id %>"><% s.country %> - <a href="<% s.homepage_url %>"><% s.organization %></a>
-                           <a href="<% s.url %><% host %>">R</a>
+                           <a href="<% s.url %><% IF s.status == 'ENABLE' %><% host %><% END %>">R</a>
                            </label>
                         </div>
                      <% END %>

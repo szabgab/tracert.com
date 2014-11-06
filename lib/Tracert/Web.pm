@@ -216,7 +216,9 @@ sub run_traceroute {
 sub _get_gateways {
 	my ($host) = @_;
 	my $data = Tracert::DB->new( root => root() )->load_data();
-	return grep { $_->{status} eq 'SHOW' } @{ $data->{gateways} };
+	return
+		grep { $_->{status} eq 'SHOW' or $_->{status} eq 'ENABLE' }
+		@{ $data->{gateways} };
 }
 
 sub traceroute {

@@ -8,7 +8,16 @@
          "id" : "",
          "organization" : "",
          "service" : "trace",
-         "status" : "SHOW",
+         "status" : "ENABLE",
          "url" : ""
       }
+
+# status:
+  SHOW
+  ENABLE
+  HIDE
+
+access_type:
+  GET
+  POST - currently not supported
 

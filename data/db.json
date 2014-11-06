@@ -10,7 +10,7 @@
          "id" : "1",
          "organization" : "NTUA - National Technical University of Athens",
          "service" : "trace",
-         "status" : "SHOW",
+         "status" : "ENABLE",
          "url" : "http://www.ntua.gr/cgi-bin/rtracert?name="
       },
       {
@@ -36,7 +36,7 @@
          "id" : "4",
          "organization" : "SLAC - Stanford Linear Accelerator Center",
          "service" : "trace",
-         "status" : "SHOW",
+         "status" : "ENABLE",
          "url" : "http://www.slac.stanford.edu/cgi-bin/nph-traceroute.pl?"
       },
       {
@@ -49,7 +49,7 @@
          "id" : "7",
          "organization" : "Telstra",
          "service" : "trace",
-         "status" : "SHOW",
+         "status" : "ENABLE",
          "url" : "http://www.telstra.net/cgi-bin/trace?destination="
       },
       {
@@ -75,7 +75,7 @@
          "id" : "9",
          "organization" : "Heller Information Services",
          "service" : "ping",
-         "status" : "SHOW",
+         "status" : "ENABLE",
          "url" : "http://www.his.com/cgi-bin/ping?"
       },
       {
@@ -88,7 +88,7 @@
          "id" : "10",
          "organization" : "Cooperativa Telefonica de Villa Gobernador Galvez Ltda (AS11815)",
          "service" : "trace",
-         "status" : "SHOW",
+         "status" : "ENABLE",
          "url" : "http://www.telvgg.coop/cgi-bin/trace.cgi?"
       },
       {
@@ -101,7 +101,7 @@
          "id" : "11",
          "organization" : "Cooperativa Telefonica Pinamar Ltda (AS14232)",
          "service" : "trace",
-         "status" : "SHOW",
+         "status" : "ENABLE",
          "url" : "http://tools.telpin.com.ar/cgi-bin/traceroute?dest="
       },
       {
@@ -114,7 +114,7 @@
          "id" : "12",
          "organization" : "Viafacil (AS16814)",
          "service" : "trace",
-         "status" : "SHOW",
+         "status" : "ENABLE",
          "url" : "http://baires02.com.ar/traceroute/index.php?submit=Traceroute&host="
       },
       {
@@ -127,7 +127,7 @@
          "id" : "13",
          "organization" : "Tele2 (AS8437)",
          "service" : "trace",
-         "status" : "SHOW",
+         "status" : "ENABLE",
          "url" : "http://services.tele2net.at/cgi-bin/traceroute.cgi?dest="
       },
       {
@@ -140,8 +140,23 @@
          "id" : "14",
          "organization" : "nemox.net (AS31394)",
          "service" : "trace",
-         "status" : "SHOW",
+         "status" : "ENABLE",
          "url" : "http://nemox.net/traceroute/index.pl?t="
+      },
+      {
+         "access_type" : "POST",
+         "city" : "",
+         "comments" : "Works manually, but could not get using GET",
+         "country" : "Austria",
+         "email" : "",
+         "homepage_url" : "http://www.globedom.com/",
+         "id" : "15",
+         "organization" : "Globedom (AS12401)",
+         "service" : "trace",
+         "status" : "SHOW",
+         "url" : "http://www.globedom.com/cgi-bin/trace"
       }
+
+
    ]
 }
