@@ -8,7 +8,7 @@
          "homepage_url" : "",
          "id" : "",
          "organization" : "",
-         "service" : "trace",
+         "service" : "traceroute",
          "status" : "ENABLE",
          "url" : "",
          "action" : ""
@@ -25,7 +25,7 @@
 # id: uniques number
 # organization: name of the organization that hosts the service
 
-# service: trace or ping
+# service: traceroute, traceroute6, ping, ping6
 
 # status:
   SHOW    - only show it but disable checkbox, for sites that don't from from Tracert.com

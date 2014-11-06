@@ -769,7 +769,50 @@
          "status" : "ENABLE",
          "url" : "https://noc.gaertner.de/cgi-bin/looking-glass.cgi",
          "action" : "https://noc.gaertner.de/cgi-bin/looking-glass.cgi?type=ping6&dest="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Germany",
+         "email" : "",
+         "homepage_url" : "http://probe-networks.de/",
+         "id" : "59",
+         "organization" : "Probe Networks",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://bandit.probe-networks.de/cgi-bin/trace",
+         "action" : "http://bandit.probe-networks.de/cgi-bin/trace?"
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Germany",
+         "email" : "",
+         "homepage_url" : "http://www.netip.de/",
+         "id" : "60",
+         "organization" : "NetIP",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://www.netip.de/",
+         "action" : "http://www.netip.de/tracert?host="
+      },
+      {
+         "access_type" : "POST",
+         "city" : "",
+         "comments" : "",
+         "country" : "Germany",
+         "email" : "",
+         "homepage_url" : "http://interscholz.net/",
+         "id" : "61",
+         "organization" : "Interscholz Internet Servivces GmbH",
+         "service" : "traceroute",
+         "status" : "SHOW",
+         "url" : "http://noc.interscholz.net/net2/",
+         "action" : ""
       }
+
 
    ]
 }
