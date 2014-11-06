@@ -265,7 +265,67 @@
          "status" : "ENABLE",
          "url" : "http://www.darkspace.info/utils/lg/",
          "action" : "http://www.darkspace.info/utils/lg/index.php?request=trace&submit=ok&host="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "Seems to only work to the machine of the client. See also http://sitka.triumf.ca/",
+         "country" : "Canada",
+         "email" : "",
+         "homepage_url" : "http://www.triumf.ca/",
+         "id" : "23",
+         "organization" : "Triumf ",
+         "service" : "trace",
+         "status" : "SHOW",
+         "url" : "http://sitka.triumf.ca/cgi-bin/traceroute-tables",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Canada",
+         "email" : "",
+         "homepage_url" : "http://carleton.ca/",
+         "id" : "24",
+         "organization" : "Carleton University",
+         "service" : "trace",
+         "status" : "ENABLE",
+         "url" : "http://traceroute.physics.carleton.ca/cgi-bin/traceroute.pl",
+         "action" : "http://traceroute.physics.carleton.ca/cgi-bin/traceroute.pl?target="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Canada",
+         "email" : "",
+         "homepage_url" : "http://network-tools.com/",
+         "id" : "25",
+         "organization" : "Network Tools",
+         "service" : "trace",
+         "status" : "ENABLE",
+         "url" : "http://network-tools.com/",
+         "action" : "http://network-tools.com/default.asp?prog=trace&host="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Canada",
+         "email" : "",
+         "homepage_url" : "http://network-tools.com/",
+         "id" : "26",
+         "organization" : "Network Tools",
+         "service" : "ping",
+         "status" : "ENABLE",
+         "url" : "http://network-tools.com/",
+         "action" : "http://network-tools.com/default.asp?prog=ping&host="
       }
+
+
+
+
 
    ]
 }
