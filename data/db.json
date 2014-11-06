@@ -349,6 +349,20 @@
          "status" : "ENABLE",
          "url" : "http://monitor.4web.net/cgi-bin/nph-trace.pl",
          "action" : "http://monitor.4web.net/cgi-bin/nph-trace.pl?trace_to="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Chile",
+         "email" : "",
+         "homepage_url" : "http://www.utfsm.cl/",
+         "id" : "29",
+         "organization" : "Universidad Tecnica Federico Santa Maria",
+         "service" : "trace",
+         "status" : "ENABLE",
+         "url" : "http://redes.dcsc.utfsm.cl/nph-traceroute.cgi",
+         "action" : "http://redes.dcsc.utfsm.cl/nph-traceroute.cgi?"
       }
 
 
