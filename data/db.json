@@ -11,10 +11,11 @@
          "organization" : "NTUA - National Technical University of Athens",
          "service" : "trace",
          "status" : "ENABLE",
-         "url" : "http://www.ntua.gr/cgi-bin/rtracert?name="
+         "url" : "http://www.ntua.gr/cgi-bin/rtracert",
+         "action" : "http://www.ntua.gr/cgi-bin/rtracert?name="
       },
       {
-         "access_type" : "GET",
+         "access_type" : "POST",
          "city" : "",
          "comments" : "It seems it only works if the hostname is filled while on the site.",
          "country" : "Switzerland",
@@ -23,8 +24,9 @@
          "id" : "2",
          "organization" : "SWITCH - Swiss Academic & Research Network",
          "service" : "trace",
-         "status" : "HIDE",
-         "url" : "http://www.switch.ch/network/tools/traceroute/destination="
+         "status" : "SHOW",
+         "url" : "http://www.switch.ch/network/tools/traceroute/",
+         "action" : "http://www.switch.ch/network/tools/traceroute/?destination="
       },
       {
          "access_type" : "GET",
@@ -37,7 +39,8 @@
          "organization" : "SLAC - Stanford Linear Accelerator Center",
          "service" : "trace",
          "status" : "ENABLE",
-         "url" : "http://www.slac.stanford.edu/cgi-bin/nph-traceroute.pl?"
+         "url" : "http://www.slac.stanford.edu/cgi-bin/nph-traceroute.pl",
+         "action" : "http://www.slac.stanford.edu/cgi-bin/nph-traceroute.pl?"
       },
       {
          "access_type" : "GET",
@@ -50,7 +53,8 @@
          "organization" : "Telstra",
          "service" : "trace",
          "status" : "ENABLE",
-         "url" : "http://www.telstra.net/cgi-bin/trace?destination="
+         "url" : "http://www.telstra.net/cgi-bin/trace",
+         "action" : "http://www.telstra.net/cgi-bin/trace?destination="
       },
       {
          "access_type" : "GET",
@@ -63,7 +67,8 @@
          "organization" : "InterWorld Communications",
          "service" : "trace",
          "status" : "HIDE",
-         "url" : "http://www.interworld.net/cgi-bin/nph-traceroute.cgi?DEST="
+         "url" : "http://www.interworld.net/cgi-bin/nph-traceroute.cgi",
+         "action" : "http://www.interworld.net/cgi-bin/nph-traceroute.cgi?DEST="
       },
       {
          "access_type" : "GET",
@@ -76,7 +81,8 @@
          "organization" : "Heller Information Services",
          "service" : "ping",
          "status" : "ENABLE",
-         "url" : "http://www.his.com/cgi-bin/ping?"
+         "url" : "http://www.his.com/cgi-bin/ping",
+         "action" : "http://www.his.com/cgi-bin/ping?"
       },
       {
          "access_type" : "GET",
@@ -89,7 +95,8 @@
          "organization" : "Cooperativa Telefonica de Villa Gobernador Galvez Ltda (AS11815)",
          "service" : "trace",
          "status" : "ENABLE",
-         "url" : "http://www.telvgg.coop/cgi-bin/trace.cgi?"
+         "url" : "http://www.telvgg.coop/cgi-bin/trace.cgi",
+         "action" : "http://www.telvgg.coop/cgi-bin/trace.cgi?"
       },
       {
          "access_type" : "GET",
@@ -102,7 +109,8 @@
          "organization" : "Cooperativa Telefonica Pinamar Ltda (AS14232)",
          "service" : "trace",
          "status" : "ENABLE",
-         "url" : "http://tools.telpin.com.ar/cgi-bin/traceroute?dest="
+         "url" : "http://tools.telpin.com.ar/cgi-bin/traceroute",
+         "action" : "http://tools.telpin.com.ar/cgi-bin/traceroute?dest="
       },
       {
          "access_type" : "GET",
@@ -115,7 +123,8 @@
          "organization" : "Viafacil (AS16814)",
          "service" : "trace",
          "status" : "ENABLE",
-         "url" : "http://baires02.com.ar/traceroute/index.php?submit=Traceroute&host="
+         "url" : "http://baires02.com.ar/traceroute/index.php",
+         "action" : "http://baires02.com.ar/traceroute/index.php?submit=Traceroute&host="
       },
       {
          "access_type" : "GET",
@@ -128,7 +137,8 @@
          "organization" : "Tele2 (AS8437)",
          "service" : "trace",
          "status" : "ENABLE",
-         "url" : "http://services.tele2net.at/cgi-bin/traceroute.cgi?dest="
+         "url" : "http://services.tele2net.at/cgi-bin/traceroute.cgi",
+         "action" : "http://services.tele2net.at/cgi-bin/traceroute.cgi?dest="
       },
       {
          "access_type" : "GET",
@@ -141,7 +151,8 @@
          "organization" : "nemox.net (AS31394)",
          "service" : "trace",
          "status" : "ENABLE",
-         "url" : "http://nemox.net/traceroute/index.pl?t="
+         "url" : "http://nemox.net/traceroute/index.pl",
+         "action" : "http://nemox.net/traceroute/index.pl?t="
       },
       {
          "access_type" : "POST",
@@ -154,7 +165,8 @@
          "organization" : "Globedom (AS12401)",
          "service" : "trace",
          "status" : "SHOW",
-         "url" : "http://www.globedom.com/cgi-bin/trace"
+         "url" : "http://www.globedom.com/cgi-bin/trace",
+         "action" : "http://www.globedom.com/cgi-bin/trace"
       },
       {
          "access_type" : "POST",
@@ -167,12 +179,13 @@
          "organization" : "Crossip communications Gmbh (AS44286) LIR - Local Internet Registry",
          "service" : "trace",
          "status" : "SHOW",
-         "url" : "http://www.lir.at/netquery/"
+         "url" : "http://www.lir.at/netquery/",
+         "action" : "http://www.lir.at/netquery/"
       },
       {
          "access_type" : "GET",
          "city" : "",
-         "comments" : "http://lg.atservers.com/",
+         "comments" : "",
          "country" : "Belarus",
          "email" : "",
          "homepage_url" : "http://www.activecloud.ru/",
@@ -180,12 +193,13 @@
          "organization" : "Beltelecom - Acvive Cloud",
          "service" : "trace",
          "status" : "ENABLE",
-         "url" : "http://by104.activeby.net/lg/?method=trace&host="
+         "url" : "http://lg.atservers.com/",
+         "action" : "http://by104.activeby.net/lg/?method=trace&host="
       },
       {
          "access_type" : "GET",
          "city" : "",
-         "comments" : "http://lg.atservers.com/",
+         "comments" : "",
          "country" : "Belarus",
          "email" : "",
          "homepage_url" : "http://www.activecloud.ru/",
@@ -193,7 +207,8 @@
          "organization" : "Beltelecom - Acvive Cloud",
          "service" : "trace",
          "status" : "ENABLE",
-         "url" : "http://eu104.activeby.net/lg/?method=trace&host="
+         "url" : "http://lg.atservers.com/",
+         "action" : "http://eu104.activeby.net/lg/?method=trace&host="
       }
    ]
 }

@@ -3,7 +3,7 @@
 
 <% FOR f IN frames %>
   <% IF f.access_type == 'GET' %>
-     <frame name="gw_<% f.id %>" src="<% f.url %><% host %>">
+     <frame name="gw_<% f.id %>" src="<% f.action %><% host %>">
   <% ELSE %>
      <frame name="gw_<% f.id %>" src="/post?site=<% f.id %>&ip=<% host %>">
   <% END %>

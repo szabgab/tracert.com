@@ -52,7 +52,11 @@
                         <div class="ui checkbox item field">
                            <input type="checkbox"  name="gw" id="gw_<% s.id %>" <% IF s.status == 'SHOW' %>disabled<% END %> class="gw" value="<% s.id %>">
                            <label for="gw_<% s.id %>"><% s.country %> - <a href="<% s.homepage_url %>"><% s.organization %></a>
-                           <a href="<% s.url %><% IF s.status == 'ENABLE' %><% host %><% END %>">R</a>
+                           <% IF s.status == 'ENABLE' %>
+                              <a href="<% s.action %><% host %>">R</a>
+                           <% ELSE %>
+                              <a href="<% s.url %>">D</a>
+                           <% END %>
                            </label>
                         </div>
                      <% END %>

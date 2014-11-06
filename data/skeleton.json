@@ -9,7 +9,8 @@
          "organization" : "",
          "service" : "trace",
          "status" : "ENABLE",
-         "url" : ""
+         "url" : "",
+         "action" : ""
       }
 
 # status:
