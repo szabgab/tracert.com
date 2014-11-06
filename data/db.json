@@ -489,7 +489,37 @@
          "status" : "ENABLE",
          "url" : "http://lg.cxnet.dk/cgi-bin/bgplg",
          "action" : "http://lg.cxnet.dk/cgi-bin/bgplg?cmd=traceroute&req="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "France",
+         "email" : "",
+         "homepage_url" : "http://sdv.fr/",
+         "id" : "39",
+         "organization" : "SdV Plurimedia",
+         "service" : "trace",
+         "status" : "ENABLE",
+         "url" : "http://traceroute.sdv.fr/",
+         "action" : "http://traceroute.sdv.fr/index.php?v6=0&host="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "France",
+         "email" : "",
+         "homepage_url" : "http://sdv.fr/",
+         "id" : "40",
+         "organization" : "SdV Plurimedia",
+         "service" : "ping",
+         "status" : "ENABLE",
+         "url" : "http://ping.sdv.fr/index.php",
+         "action" : "http://ping.sdv.fr/index.php?v6=0&host="
       }
+
+
 
 
    ]
