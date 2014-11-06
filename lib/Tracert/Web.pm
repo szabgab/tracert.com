@@ -217,10 +217,7 @@ sub _get_gateways {
 	my ($host) = @_;
 	my $data = Tracert::DB->new( root => root() )->load_data();
 	foreach my $gw ( @{ $data->{gateways} } ) {
-		$gw->{request}
-			= "$gw->{url}$gw->{path}?"
-			. ( $gw->{extra_params} || '' )
-			. $host;
+		$gw->{request} = "$gw->{url}$host";
 	}
 	return grep { $_->{status} eq 'SHOW' } @{ $data->{gateways} };
 }

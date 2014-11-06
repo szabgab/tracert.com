@@ -23,9 +23,7 @@ sub check_sites {
 		$ids{ $gw->{id} } = $gw;
 
 		if ( $gw->{status} eq 'SHOW' ) {
-			my $url = "$gw->{url}$gw->{path}";
-			say
-				"$gw->{access_type} $url '$gw->{input}'  '$gw->{extra_params}'";
+			say "$gw->{access_type} $gw->{url} '$gw->{input}'";
 
 			next;
 		}

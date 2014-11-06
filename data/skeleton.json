@@ -6,12 +6,10 @@
          "comments" : "",
          "country" : "",
          "email" : "",
-         "extra_params" : "",
          "homepage_url" : "",
          "id" : "",
          "input" : "",
          "organization" : "",
-         "path" : "",
          "service" : "trace",
          "status" : "SHOW",
          "url" : ""
