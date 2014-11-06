@@ -839,6 +839,48 @@
          "status" : "ENABLE",
          "url" : "http://protagoras.edu.uoi.gr/balomenos/utils/traceroute/trace.php",
          "action" : "http://protagoras.edu.uoi.gr/balomenos/utils/traceroute/trace.php?submit=Traceroute%21&host="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Hong Kong",
+         "email" : "",
+         "homepage_url" : "http://hgc.com.hk/",
+         "id" : "64",
+         "organization" : "Hutchison Global Crossing",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://traceroute.hgc.com.hk/cgi-bin/nph-traceroute",
+         "action" : "http://traceroute.hgc.com.hk/cgi-bin/nph-traceroute?"
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Hong Kong",
+         "email" : "",
+         "homepage_url" : "http://pbase.net/",
+         "id" : "65",
+         "organization" : "Powerbase - PCCW",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://www.custfm.pbase.net/traceroute/traceroute.htm",
+         "action" : "http://www.custfm.pbase.net/perl/trace_output.cgi?host="
+      },
+      {
+         "access_type" : "POST",
+         "city" : "",
+         "comments" : "",
+         "country" : "Hungary",
+         "email" : "",
+         "homepage_url" : "http://hbone.hu/",
+         "id" : "66",
+         "organization" : "Hungarnet ",
+         "service" : "traceroute",
+         "status" : "SHOW",
+         "url" : "http://diag.vh.hbone.hu/mtr/",
+         "action" : ""
       }
 
    ]
