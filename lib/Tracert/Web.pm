@@ -33,6 +33,10 @@ Tracert::Web - The website of tracert.com
 my $env;
 
 my %RED = (
+	'/linode' =>
+		'http://www.linode.com/?r=cccf1376edd5c6f0b8eccb97e0741a1f24584e43',
+	'/digitalocean' => 'https://www.digitalocean.com/?refcode=0d4cc75b3a74',
+
 	'/index.html'     => '/',
 	'/copyright.html' => '/copyright',
 	'/privacy.html'   => '/privacy',
@@ -207,8 +211,6 @@ sub run_traceroute {
 	# TODO check if valid IP and/or valid hostname
 	# TODO if it starts with http:// remove it before passing to clients.
 
-#return [ '200', [ 'Content-Type' => 'text/html' ], ["$host " . join "-", @gws], ];
-#return [ '200', [ 'Content-Type' => 'text/plain' ], [Dumper \@gateways], ];
 	return plain_template( 'run',
 		{ frames => \@gateways, host => $host, rows => $rows } );
 }
