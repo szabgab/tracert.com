@@ -9,20 +9,13 @@
         <a href="/traceroute" class="item">Traceroute</a>
         <a href="/ping" class="item">Ping</a>
 
-<!--
-        <div class="ui dropdown item">Sources
+        <div class="ui dropdown item">IPv6
           <i class="dropdown icon"></i>
           <div class="menu">
-            <a href="/cpan" class="item">CPAN</a>
-            <a href="/pypi" class="item">PyPi</a>
-            <a href="/pear" class="item">PEAR</a>
-            <a href="/gems" class="item">Gems</a>
-            <a href="/npm" class="item">NPM</a>
-            <div class="ui horizontal divider"></div>
-            <a href="/" class="item">One more seperated link</a>
+            <a href="/traceroute6" class="item">Traceroute 6</a>
+            <a href="/ping6" class="item">Ping 6</a>
           </div>
         </div>
--->
 
       <div class="menu right">
         <a href="/resources" class="item">Resources</a>
