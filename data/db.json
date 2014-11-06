@@ -587,6 +587,76 @@
          "status" : "SHOW",
          "url" : "http://www.traceroute.eu/traceroute/",
          "action" : ""
+      },
+      {
+         "access_type" : "POST",
+         "city" : "",
+         "comments" : "",
+         "country" : "Germany",
+         "email" : "",
+         "homepage_url" : "http://www.heise.de/",
+         "id" : "46",
+         "organization" : "Plus-Line",
+         "service" : "trace",
+         "status" : "SHOW",
+         "url" : "http://www.heise.de/netze/tools/traceroute",
+         "action" : ""
+      },
+      {
+         "access_type" : "POST",
+         "city" : "",
+         "comments" : "",
+         "country" : "Germany",
+         "email" : "",
+         "homepage_url" : "https://www.regfish.de/",
+         "id" : "47",
+         "organization" : "Regfish",
+         "service" : "trace",
+         "status" : "SHOW",
+         "url" : "https://www.regfish.de/noc/traceroute",
+         "action" : ""
+      },
+      {
+         "access_type" : "POST",
+         "city" : "",
+         "comments" : "",
+         "country" : "Germany",
+         "email" : "",
+         "homepage_url" : "http://www.internetwire.de/",
+         "id" : "48",
+         "organization" : "InterNetWire",
+         "service" : "trace",
+         "status" : "SHOW",
+         "url" : "http://www.internetwire.de/de/service/support/support-tools/traceroute/",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Germany",
+         "email" : "",
+         "homepage_url" : "https://www.hosteurope.de/",
+         "id" : "49",
+         "organization" : "Host Europe",
+         "service" : "trace",
+         "status" : "ENABLE",
+         "url" : "http://latency.hosteurope.de/lg/",
+         "action" : "http://latency.hosteurope.de/lg/traceroute.cgi?mode=trace&addr="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Germany",
+         "email" : "",
+         "homepage_url" : "https://www.hosteurope.de/",
+         "id" : "50",
+         "organization" : "Host Europe",
+         "service" : "ping",
+         "status" : "ENABLE",
+         "url" : "http://latency.hosteurope.de/lg/",
+         "action" : "http://latency.hosteurope.de/lg/traceroute.cgi?mode=ping&addr="
       }
 
 
