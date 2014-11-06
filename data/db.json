@@ -3,7 +3,6 @@
       {
          "access_type" : "GET",
          "action" : "",
-         "backbone" : "",
          "city" : "Athens",
          "comments" : "",
          "country" : "Greece",
@@ -19,7 +18,6 @@
       {
          "access_type" : "GET",
          "action" : "",
-         "backbone" : "TEN34-SWITCH",
          "city" : "",
          "comments" : "It seems it only works if the hostname is filled while on the site.",
          "country" : "Switzerland",
@@ -35,7 +33,6 @@
       {
          "access_type" : "GET",
          "action" : "",
-         "backbone" : "ESNet",
          "city" : "CA, Stanford",
          "comments" : "",
          "country" : "USA",
@@ -51,7 +48,6 @@
       {
          "access_type" : "GET",
          "action" : "",
-         "backbone" : "",
          "city" : "Australian Capital Territory, Canberra",
          "comments" : "",
          "country" : "Australia",
@@ -67,7 +63,6 @@
       {
          "access_type" : "GET",
          "action" : "",
-         "backbone" : "LN.net, Concentric, Epoch, MAE-LA, AGIS",
          "city" : "CA, El Segundo",
          "comments" : "Either only works as POST or needs referrer.",
          "country" : "USA",
@@ -83,7 +78,6 @@
       {
          "access_type" : "GET",
          "action" : "http://www.btoy1.rochester.ny.us/HCheck.php3?Ping",
-         "backbone" : "MCI-CAIS",
          "city" : "MD, Rockville",
          "comments" : "",
          "country" : "USA",
@@ -99,7 +93,6 @@
       {
          "access_type" : "GET",
          "action" : "",
-         "backbone" : "",
          "city" : "",
          "comments" : "",
          "country" : "Argentina",
@@ -115,7 +108,6 @@
       {
          "access_type" : "GET",
          "action" : "",
-         "backbone" : "",
          "city" : "",
          "comments" : "",
          "country" : "Argentina",
@@ -131,7 +123,6 @@
       {
          "access_type" : "GET",
          "action" : "",
-         "backbone" : "",
          "city" : "",
          "comments" : "",
          "country" : "Argentina",
@@ -147,7 +138,6 @@
       {
          "access_type" : "GET",
          "action" : "",
-         "backbone" : "",
          "city" : "",
          "comments" : "",
          "country" : "Austria",
@@ -163,7 +153,6 @@
       {
          "access_type" : "GET",
          "action" : "",
-         "backbone" : "",
          "city" : "",
          "comments" : "",
          "country" : "Austria",
