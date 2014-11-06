@@ -321,10 +321,35 @@
          "status" : "ENABLE",
          "url" : "http://network-tools.com/",
          "action" : "http://network-tools.com/default.asp?prog=ping&host="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Canada",
+         "email" : "",
+         "homepage_url" : "http://www.tera-byte.com/",
+         "id" : "27",
+         "organization" : "Tera-Byte",
+         "service" : "trace",
+         "status" : "ENABLE",
+         "url" : "http://www.tera-byte.com/cgi-bin/nph-trace",
+         "action" : "http://www.tera-byte.com/cgi-bin/nph-trace?"
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Canada",
+         "email" : "",
+         "homepage_url" : "http://4web.ca/",
+         "id" : "28",
+         "organization" : "4Web.ca",
+         "service" : "trace",
+         "status" : "ENABLE",
+         "url" : "http://monitor.4web.net/cgi-bin/nph-trace.pl",
+         "action" : "http://monitor.4web.net/cgi-bin/nph-trace.pl?trace_to="
       }
-
-
-
 
 
    ]
