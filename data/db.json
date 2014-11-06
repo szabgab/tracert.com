@@ -699,6 +699,48 @@
          "status" : "ENABLE",
          "url" : "http://traceroute.insode.de/",
          "action" : "http://traceroute.insode.de/?target7="
+      },
+      {
+         "access_type" : "POST",
+         "city" : "",
+         "comments" : "Only allows IP addresses",
+         "country" : "Germany",
+         "email" : "",
+         "homepage_url" : "http://ipduh.com/",
+         "id" : "54",
+         "organization" : "IPduh.com",
+         "service" : "trace",
+         "status" : "SHOW",
+         "url" : "http://ipduh.com/ip/traceroute/",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Germany",
+         "email" : "",
+         "homepage_url" : "https://gaertner.de/",
+         "id" : "55",
+         "organization" : "Gaertner Datensysteme",
+         "service" : "trace",
+         "status" : "ENABLE",
+         "url" : "https://noc.gaertner.de/cgi-bin/looking-glass.cgi",
+         "action" : "https://noc.gaertner.de/cgi-bin/looking-glass.cgi?type=traceroute&dest="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Germany",
+         "email" : "",
+         "homepage_url" : "https://gaertner.de/",
+         "id" : "56",
+         "organization" : "Gaertner Datensysteme",
+         "service" : "ping",
+         "status" : "ENABLE",
+         "url" : "https://noc.gaertner.de/cgi-bin/looking-glass.cgi",
+         "action" : "https://noc.gaertner.de/cgi-bin/looking-glass.cgi?type=ping&dest="
       }
 
    ]
