@@ -112,12 +112,10 @@ sub run {
 			return plain_template('gw_head');
 		}
 
-		if ( $path_info eq '/traceroute' ) {
-			return traceroute( $env, $request, 'traceroute' );
+		if ( $path_info =~ m{^/(traceroute6|traceroute|ping6|ping)$} ) {
+			return traceroute( $env, $request, $1 );
 		}
-		if ( $path_info eq '/ping' ) {
-			return traceroute( $env, $request, 'ping' );
-		}
+
 		if ( $path_info eq '/resolver' ) {
 			return resolver($request);
 		}
