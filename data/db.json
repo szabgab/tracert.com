@@ -237,8 +237,35 @@
          "status" : "ENABLE",
          "url" : "http://guanabara.rederio.br/cgi-bin/nph-traceroute",
          "action" : "http://guanabara.rederio.br/cgi-bin/nph-traceroute?function=traceroute&target="
+      },
+      {
+         "access_type" : "POST",
+         "city" : "",
+         "comments" : "",
+         "country" : "Brasil",
+         "email" : "",
+         "homepage_url" : "http://registro.br/",
+         "id" : "21",
+         "organization" : "Registro.br",
+         "service" : "trace",
+         "status" : "SHOW",
+         "url" : "http://registro.br/cgi-bin/nicbr/trt",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Bulgaria",
+         "email" : "",
+         "homepage_url" : "http://www.darkspace.info/",
+         "id" : "22",
+         "organization" : "FS Net",
+         "service" : "trace",
+         "status" : "ENABLE",
+         "url" : "http://www.darkspace.info/utils/lg/",
+         "action" : "http://www.darkspace.info/utils/lg/index.php?request=trace&submit=ok&host="
       }
-
 
    ]
 }
