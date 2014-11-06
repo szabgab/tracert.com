@@ -657,10 +657,49 @@
          "status" : "ENABLE",
          "url" : "http://latency.hosteurope.de/lg/",
          "action" : "http://latency.hosteurope.de/lg/traceroute.cgi?mode=ping&addr="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Germany",
+         "email" : "",
+         "homepage_url" : "http://www.graupe.de/",
+         "id" : "51",
+         "organization" : "TELTA Citynetz Eberswalde",
+         "service" : "trace",
+         "status" : "ENABLE",
+         "url" : "http://www.graupe.de/cgi-bin/traceroute.pl",
+         "action" : "http://www.graupe.de/cgi-bin/traceroute.pl?queries=3&host="
+      },
+      {
+         "access_type" : "POST",
+         "city" : "",
+         "comments" : "",
+         "country" : "Germany",
+         "email" : "",
+         "homepage_url" : "http://www.kloth.net/",
+         "id" : "52",
+         "organization" : "Kloth.Net",
+         "service" : "trace",
+         "status" : "SHOW",
+         "url" : "http://www.kloth.net/services/traceroute.php",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Germany",
+         "email" : "",
+         "homepage_url" : "http://www.insode.de/",
+         "id" : "53",
+         "organization" : "R2Z2 Insode",
+         "service" : "trace",
+         "status" : "ENABLE",
+         "url" : "http://traceroute.insode.de/",
+         "action" : "http://traceroute.insode.de/?target7="
       }
-
-
-
 
    ]
 }
