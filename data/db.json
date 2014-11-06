@@ -223,6 +223,22 @@
          "status" : "ENABLE",
          "url" : "http://www.rack66.com/?p=traceroutepage",
          "action" : "http://www.rack66.com/trace.php?&submit=Traceroute%21&host="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Brasil",
+         "email" : "",
+         "homepage_url" : "http://www.rederio.br/",
+         "id" : "20",
+         "organization" : "Rede Rio de Computadores",
+         "service" : "trace",
+         "status" : "ENABLE",
+         "url" : "http://guanabara.rederio.br/cgi-bin/nph-traceroute",
+         "action" : "http://guanabara.rederio.br/cgi-bin/nph-traceroute?function=traceroute&target="
       }
+
+
    ]
 }

@@ -1,3 +1,4 @@
+
       {
          "access_type" : "GET",
          "city" : "",
@@ -13,12 +14,24 @@
          "action" : ""
       }
 
-# status:
-  SHOW
-  ENABLE
-  HIDE
 
-access_type:
+# access_type:
   GET
   POST - currently not supported
+
+# email: conatact address
+
+# homepage_url: of the organization
+# id: uniques number
+# organization: name of the organization that hosts the service
+
+# service: trace or ping
+
+# status:
+  SHOW    - only show it but disable checkbox, for sites that don't from from Tracert.com
+  ENABLE  - show and enable
+  HIDE    - don't show at all
+
+# url: of the traceroute form
+# action: url that needs to be called to run the traceroute
 
