@@ -363,8 +363,35 @@
          "status" : "ENABLE",
          "url" : "http://redes.dcsc.utfsm.cl/nph-traceroute.cgi",
          "action" : "http://redes.dcsc.utfsm.cl/nph-traceroute.cgi?"
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Cyprus",
+         "email" : "",
+         "homepage_url" : "http://prime-tel.net/",
+         "id" : "30",
+         "organization" : "ThunderWorx (Prime Tel)",
+         "service" : "trace",
+         "status" : "ENABLE",
+         "url" : "http://noc.thunderworx.net/cgi-bin/public/traceroute.pl",
+         "action" : "http://noc.thunderworx.net/cgi-bin/public/traceroute.pl?target="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Cyprus",
+         "email" : "",
+         "homepage_url" : "http://prime-tel.net/",
+         "id" : "31",
+         "organization" : "ThunderWorx (Prime Tel)",
+         "service" : "ping",
+         "status" : "ENABLE",
+         "url" : "http://noc.thunderworx.net/cgi-bin/public/ping.pl",
+         "action" : "http://noc.thunderworx.net/cgi-bin/public/ping.pl?target="
       }
-
 
    ]
 }
