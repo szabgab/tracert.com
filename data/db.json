@@ -979,6 +979,53 @@
          "status" : "ENABLE",
          "url" : "http://www.seeweb.it/network/11",
          "action" : "http://www.seeweb.it/cgi/trc.cgi?h="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Italy",
+         "email" : "",
+         "homepage_url" : "http://www.ncc.itgate.net/",
+         "id" : "74",
+         "organization" : "ITGate Network",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://www.ncc.itgate.net/cgi-bin/nph-traceroute",
+         "action" : "http://www.ncc.itgate.net/cgi-bin/nph-traceroute?"
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Italy",
+         "email" : "",
+         "homepage_url" : "http://services.e4a.it/",
+         "id" : "75",
+         "organization" : "E4A s.r.l",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://services.e4a.it/cgi-bin/traceroute.cgi",
+         "action" : "http://services.e4a.it/cgi-bin/traceroute.cgi?"
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Japan",
+         "email" : "",
+         "homepage_url" : "http://www.harenet.ad.jp/",
+         "id" : "76",
+         "organization" : "Harenet ",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://www.harenet.ad.jp/hareonly/trace.htm",
+         "action" : "http://www.harenet.ad.jp/cgi-bin/harenet/traceroute/traceroute.cgi?host="
       }
+
+
+
+
+
    ]
 }

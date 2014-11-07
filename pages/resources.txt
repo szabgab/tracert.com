@@ -22,6 +22,7 @@
      It is well organized, I found quite a lot of new sites on this list, but it has not been maintained for quite some time now and a lot of
      the hosts are not responding any more.</li>
   <li><a href="http://tech.c3.hu/tracetoc3.htm">C3</a> another list.</li>
+  <li><a href="http://www.ncc.itgate.net/cgi-bin/nph-traceroute">list of traceroute gateways</a></li>
   <li><a href="http://www.arin.net/">Arin</a> American Registry for Internet Numbers - if you want to know
   who 'owns' an IP address.</li>
   <li><a href="http://www.ripe.net/">Ripe</a> Network Coordination Center (Europe)</li>
