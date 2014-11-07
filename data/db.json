@@ -1021,7 +1021,106 @@
          "status" : "ENABLE",
          "url" : "http://www.harenet.ad.jp/hareonly/trace.htm",
          "action" : "http://www.harenet.ad.jp/cgi-bin/harenet/traceroute/traceroute.cgi?host="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "They seem to be checking the referrer. (There are actually 4 servicese there)",
+         "country" : "Japan",
+         "email" : "",
+         "homepage_url" : "http://www.tumori.nu/",
+         "id" : "77",
+         "organization" : "CTNet Computer Communication Network",
+         "service" : "traceroute",
+         "status" : "SHOW",
+         "url" : "http://www.tumori.nu/IPv6/traceroute.html",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "They seem to be checking the referrer. (There are actually 4 servicese there)",
+         "country" : "Japan",
+         "email" : "",
+         "homepage_url" : "http://www.tumori.nu/",
+         "id" : "78",
+         "organization" : "CTNet Computer Communication Network",
+         "service" : "traceroute6",
+         "status" : "SHOW",
+         "url" : "http://www.tumori.nu/IPv6/traceroute.html",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Kyrgyzstan",
+         "email" : "",
+         "homepage_url" : "http://elcat.kg/",
+         "id" : "79",
+         "organization" : "ElCat",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://stat.elcat.kg/trace.cgi",
+         "action" : "http://stat.elcat.kg/trace.cgi?host="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Latvia",
+         "email" : "",
+         "homepage_url" : "http://www.eunet.lv/",
+         "id" : "80",
+         "organization" : "EUNet",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://www.eunet.lv/cinfo/connect/index.phtml",
+         "action" : "http://www.eunet.lv/cinfo/connect/traceroute.phtml?host="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Latvia",
+         "email" : "",
+         "homepage_url" : "http://www.eunet.lv/",
+         "id" : "81",
+         "organization" : "EUNet",
+         "service" : "ping",
+         "status" : "ENABLE",
+         "url" : "http://www.eunet.lv/cinfo/connect/index.phtml",
+         "action" : "http://www.eunet.lv/cinfo/connect/ping.phtml?host="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "There might be two sources: 'Global table' and 'Local table'",
+         "country" : "Lithuania",
+         "email" : "",
+         "homepage_url" : "http://www.tinklomatas.lt/",
+         "id" : "82",
+         "organization" : "BITE Internet",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://www.tinklomatas.lt/LookingGlass/",
+         "action" : "http://www.tinklomatas.lt/LookingGlass/?spaf_form_action=submit&action=trace&router=Global%20table&host="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "There might be two sources: 'Global table' and 'Local table'",
+         "country" : "Lithuania",
+         "email" : "",
+         "homepage_url" : "http://www.tinklomatas.lt/",
+         "id" : "83",
+         "organization" : "BITE Internet",
+         "service" : "ping",
+         "status" : "ENABLE",
+         "url" : "http://www.tinklomatas.lt/LookingGlass/",
+         "action" : "http://www.tinklomatas.lt/LookingGlass/?spaf_form_action=submit&action=ping&router=Global%20table&host="
       }
+
 
 
 

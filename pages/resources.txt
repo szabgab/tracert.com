@@ -30,6 +30,7 @@
   <li><a href="http://www.apnic.org/">Apnic - Aisa Pacific Network Information Centre</a></li>
   <li><a href="http://www.cyberciti.biz/faq/howto-test-ipv6-network-with-ping6-command/">Ping IPv6 IP Address With ping6 Command</a></li>
   <li><a href="http://www.traceroute.eu/">Traceroute tools</a></li>
+  <li><a href="http://online-nettools.com/">Online-Nettools</a></li>
  
 </ul>
 
