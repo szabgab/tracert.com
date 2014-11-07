@@ -1259,8 +1259,63 @@
          "status" : "ENABLE",
          "url" : "http://www.atcom.net.pl/serwisy/trace.html",
          "action" : "http://www.atcom.net.pl/cgi-bin/traceroute.pl?host="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Poland",
+         "email" : "",
+         "homepage_url" : "http://piotrkosoft.net/",
+         "id" : "94",
+         "organization" : "Piotrkosoft ",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://piotrkosoft.net/nettools.shtml",
+         "action" : "http://piotrkosoft.net/traceroute.php?submit=Traceroute%21&host="
+      },
+      {
+         "access_type" : "POST",
+         "city" : "",
+         "comments" : "",
+         "country" : "Poland",
+         "email" : "",
+         "homepage_url" : "http://dhosting.pl/",
+         "id" : "95",
+         "organization" : "dhosting.pl",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://lg.dhosting.pl/",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Portugal",
+         "email" : "",
+         "homepage_url" : "http://www.3gnt.net/",
+         "id" : "96",
+         "organization" : "3gntw",
+         "service" : "traceroute",
+         "status" : "SHOW",
+         "url" : "http://toolbox.3gnt.net/network/",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Romania",
+         "email" : "",
+         "homepage_url" : "http://www.wifimarket.ro/",
+         "id" : "97",
+         "organization" : "ZYX - Wifi market.ro",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://traceroute.zyx.ro/",
+         "action" : "http://traceroute.zyx.ro/index.php?submit=Traceroute%21&host="
       }
-
 
    ]
 }
