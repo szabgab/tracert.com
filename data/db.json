@@ -1679,6 +1679,76 @@
          "status" : "SHOW",
          "url" : "http://www.myiptest.com/staticpages/index.php/Traceroute-My-IP",
          "action" : ""
+      },
+      {
+         "access_type" : "POST",
+         "city" : "",
+         "comments" : "",
+         "country" : "United Kingdom",
+         "email" : "",
+         "homepage_url" : "https://mebsd.com/",
+         "id" : "124",
+         "organization" : "Me, BSD",
+         "service" : "traceroute",
+         "status" : "SHOW",
+         "url" : "https://mebsd.com/ipv6-ping-and-traceroute",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "United Kingdom",
+         "email" : "",
+         "homepage_url" : "http://newnet.co.uk/",
+         "id" : "125",
+         "organization" : "NewNet",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://ab.newnet.co.uk/cgi-bin/traceroute",
+         "action" : "http://ab.newnet.co.uk/cgi-bin/traceroute?"
+      },
+      {
+         "access_type" : "POST",
+         "city" : "",
+         "comments" : "Seems to only work with IP addresses.",
+         "country" : "United Kingdom",
+         "email" : "",
+         "homepage_url" : "http://www.hotlinks.co.uk/",
+         "id" : "126",
+         "organization" : "HotLinks",
+         "service" : "traceroute",
+         "status" : "SHOW",
+         "url" : "http://www.hotlinks.co.uk/traceroute-htm/",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "United Kingdom",
+         "email" : "",
+         "homepage_url" : "http://www.as29527.net/",
+         "id" : "127",
+         "organization" : "Astutium",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://www.as29527.net/tools/trace.pl",
+         "action" : "http://www.as29527.net/tools/trace.pl?t="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "USA",
+         "email" : "",
+         "homepage_url" : "http://www.usc.edu/",
+         "id" : "128",
+         "organization" : "University of Southern California",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://www.usc.edu/cgi-bin/traceroute",
+         "action" : "http://www.usc.edu/cgi-bin/traceroute?target="
       }
 
    ]
