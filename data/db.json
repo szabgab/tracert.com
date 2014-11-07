@@ -1637,9 +1637,49 @@
          "status" : "ENABLE",
          "url" : "http://mrtg.swu.ac.th/cgi-bin/trace.cgi",
          "action" : "http://mrtg.swu.ac.th/cgi-bin/trace.cgi?"
+      },
+      {
+         "access_type" : "POST",
+         "city" : "",
+         "comments" : "",
+         "country" : "Ukraine",
+         "email" : "",
+         "homepage_url" : "http://cyfra.ua/",
+         "id" : "121",
+         "organization" : "Cyfra ",
+         "service" : "traceroute",
+         "status" : "SHOW",
+         "url" : "http://cyfra.ua/tech-info/traceroute/",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "Only traceroute to the IP of the browser. (Is this really Ukraine?)",
+         "country" : "Ukraine",
+         "email" : "",
+         "homepage_url" : "http://www.xilo.net/",
+         "id" : "122",
+         "organization" : "Xilo",
+         "service" : "traceroute",
+         "status" : "SHOW",
+         "url" : "http://traceroute.xilo.net/",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "United Kingdom",
+         "email" : "",
+         "homepage_url" : "http://www.myiptest.com/",
+         "id" : "123",
+         "organization" : "MyIpTest.com",
+         "service" : "traceroute",
+         "status" : "SHOW",
+         "url" : "http://www.myiptest.com/staticpages/index.php/Traceroute-My-IP",
+         "action" : ""
       }
-
-
 
    ]
 }
