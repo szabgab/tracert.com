@@ -1413,6 +1413,76 @@
          "status" : "ENABLE",
          "url" : "http://lg.transtk.ru/",
          "action" : "http://lg.transtk.ru/cgi/ping.cgi?t="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "Requires captcha",
+         "country" : "Singapore",
+         "email" : "",
+         "homepage_url" : "http://info.singtel.com/",
+         "id" : "105",
+         "organization" : "SingTel Internet Exchange",
+         "service" : "traceroute",
+         "status" : "SHOW",
+         "url" : "http://www.stixlg.singtel.com/open/public/lgmain/lgquery/",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Singapore",
+         "email" : "",
+         "homepage_url" : "http://www.newmediaexpress.com/",
+         "id" : "106",
+         "organization" : "NewMedia Express",
+         "service" : "traceroute",
+         "status" : "SHOW",
+         "url" : "http://www.speedtest.com.sg/speedtest.php",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Slovakia",
+         "email" : "",
+         "homepage_url" : "http://www.moja-ip.sk/",
+         "id" : "107",
+         "organization" : "Rhenus Logistics",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://www.moja-ip.sk/traceroute",
+         "action" : "http://www.moja-ip.sk/traceroute?host="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "South Africa",
+         "email" : "",
+         "homepage_url" : "http://truteq.com/",
+         "id" : "108",
+         "organization" : "TruTeq Wireless",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://services.truteq.com/",
+         "action" : "http://services.truteq.com/cgi-bin/nph-traceroute?"
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "South Africa",
+         "email" : "",
+         "homepage_url" : "http://truteq.com/",
+         "id" : "109",
+         "organization" : "TruTeq Wireless",
+         "service" : "ping",
+         "status" : "ENABLE",
+         "url" : "http://services.truteq.com/",
+         "action" : "http://services.truteq.com/cgi-bin/nph-ping?"
       }
 
    ]
