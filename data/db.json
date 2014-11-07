@@ -1119,11 +1119,147 @@
          "status" : "ENABLE",
          "url" : "http://www.tinklomatas.lt/LookingGlass/",
          "action" : "http://www.tinklomatas.lt/LookingGlass/?spaf_form_action=submit&action=ping&router=Global%20table&host="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Luxembourg",
+         "email" : "",
+         "homepage_url" : "http://www.fmc.lu/",
+         "id" : "84",
+         "organization" : "FMC Consulting",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://traceroute.fmc.lu/",
+         "action" : "http://traceroute.fmc.lu/cgi-bin/traceping.pl?program=traceroute&address="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Luxembourg",
+         "email" : "",
+         "homepage_url" : "http://www.fmc.lu/",
+         "id" : "85",
+         "organization" : "FMC Consulting",
+         "service" : "ping",
+         "status" : "ENABLE",
+         "url" : "http://traceroute.fmc.lu/",
+         "action" : "http://traceroute.fmc.lu/cgi-bin/traceping.pl?program=ping&address="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "The Netherlands",
+         "email" : "",
+         "homepage_url" : "http://www.vakantieland.nl/",
+         "id" : "86",
+         "organization" : "Vakantieland",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://www.vakantieland.nl/traceroute/default2.asp",
+         "action" : "http://www.vakantieland.nl/traceroute/default2.asp?Host="
+      },
+      {
+         "access_type" : "POST",
+         "city" : "",
+         "comments" : "",
+         "country" : "The Netherlands",
+         "email" : "",
+         "homepage_url" : "https://www.transip.nl/",
+         "id" : "87",
+         "organization" : "TransIP",
+         "service" : "traceroute",
+         "status" : "SHOW",
+         "url" : "https://www.transip.nl/netwerk/",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "New Zealand",
+         "email" : "",
+         "homepage_url" : "http://www.kcbbs.gen.nz/",
+         "id" : "88",
+         "organization" : "KC Computer Services",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://www.kcbbs.gen.nz/cgi-bin/trace",
+         "action" : "http://www.kcbbs.gen.nz/cgi-bin/trace?"
+      },
+      {
+         "access_type" : "POST",
+         "city" : "",
+         "comments" : "",
+         "country" : "Pakistan",
+         "email" : "",
+         "homepage_url" : "http://nexlinx.net.pk/",
+         "id" : "89",
+         "organization" : "Nexlinx (Internet Services) LG",
+         "service" : "traceroute",
+         "status" : "SHOW",
+         "url" : "http://lg.nexlinx.net.pk/",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Poland",
+         "email" : "",
+         "homepage_url" : "http://www.gts.pl/",
+         "id" : "90",
+         "organization" : "Internet Partners",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://cgi.ipartners.pl/cgi-bin/traceroute.cgi",
+         "action" : "http://cgi.ipartners.pl/cgi-bin/traceroute.cgi?hostname="
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Poland",
+         "email" : "",
+         "homepage_url" : "https://home.pl/",
+         "id" : "91",
+         "organization" : "Home.pl",
+         "service" : "traceroute",
+         "status" : "SHOW",
+         "url" : "https://home.pl/test/",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "Only to the IP of the user.",
+         "country" : "Poland",
+         "email" : "",
+         "homepage_url" : "http://ceti.pl/",
+         "id" : "92",
+         "organization" : "CETI",
+         "service" : "traceroute",
+         "status" : "SHOW",
+         "url" : "http://ceti.pl/cgi-bin/nph-trace.cgi",
+         "action" : ""
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Poland",
+         "email" : "",
+         "homepage_url" : "http://www.atcom.net.pl/",
+         "id" : "93",
+         "organization" : "Atcom",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://www.atcom.net.pl/serwisy/trace.html",
+         "action" : "http://www.atcom.net.pl/cgi-bin/traceroute.pl?host="
       }
-
-
-
-
 
 
    ]
