@@ -1483,6 +1483,20 @@
          "status" : "ENABLE",
          "url" : "http://services.truteq.com/",
          "action" : "http://services.truteq.com/cgi-bin/nph-ping?"
+      },
+      {
+         "access_type" : "GET",
+         "city" : "",
+         "comments" : "",
+         "country" : "Spain",
+         "email" : "",
+         "homepage_url" : "http://mad1srv03.as12769.net/",
+         "id" : "110",
+         "organization" : "GOWEX ",
+         "service" : "traceroute",
+         "status" : "ENABLE",
+         "url" : "http://mad1srv03.as12769.net/",
+         "action" : "http://mad1srv03.as12769.net/trace?consu=ping&dire="
       }
 
    ]
