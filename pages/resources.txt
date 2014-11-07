@@ -40,6 +40,8 @@
 <ul>
   <li><a href="http://en.wikipedia.org/wiki/Traceroute">Traceroute</a></li>
   <li><a href="http://lookingglass.pccwglobal.com/">PCCW Global Ping and Traceroute</a></li>
+  <li><a href="http://lg.telia.ru/">TeliaSonera</a></li>
+
 </ul>
 
 <h2>DNS Resolution</h2>
