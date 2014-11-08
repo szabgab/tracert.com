@@ -228,7 +228,8 @@ sub traceroute {
 
 	#my ($out) = Tracert::Exe->trace( host => $host, lines => 5 );
 
-	my @gws = sort { lc $a->{country} cmp lc $b->{country} } _get_gateways($host);
+	my @gws
+		= sort { lc $a->{country} cmp lc $b->{country} } _get_gateways($host);
 	return template(
 		'traceroute',
 		{
