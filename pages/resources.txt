@@ -33,6 +33,24 @@
   <li><a href="http://online-nettools.com/">Online-Nettools</a></li>
   <li><a href="http://www.myiptest.com/">MyIpTest.com</a></li>
   <li><a href="http://www.globalcrossing.com/network/network_performance.aspx">Link to various gateways</a></li>
+  <li><a href="http://www.internet2.edu/products-services/performance-analytics/performance-tools/">Internet 2 - Network Diagnostic and Performance Tool</a></li>
+  <li><a href="http://netsniff-ng.org/">netsniff-ng including ashunt</a></li>
+  <li><a href="http://www.ietf.org/rfc/rfc1393.txt?number=1393">RFC 1393, Traceroute using IP Options</a></li>
+  <li><a href="https://www.peeringdb.com/">Peering Database</a></li>
+  <li><a href="http://www.kitchenlab.org/www/bmah/Software/pchar/">pchar: A Tool for Measuring Internet Path Characteristics</a></li>
+  <li><a href="ftp://ftp.ee.lbl.gov/pathchar/"">Pathchar</a></li>
+  <li><a href="http://www.bitwizard.nl/mtr/">MTR</a></li>
+  <li><a href="http://paris-traceroute.net/">Paris traceroute</a></li>
+  <li><a href="http://www.caida.org/research/routing/reversetrace/">CAIDA: Reverse Traceroute and Looking Glass servers in the World</a></li>
+  <li><a href="http://www.lacnic.net/cgi-bin/lacnic/whois?lg=EN">LACNIC Whois</a></li>
+  <li><a href="http://www.networksolutions.com/en_US/whois/index.jhtml">Network Solutions Whois</a></li>
+  <li><a href="http://www.radb.net/">Routing Arbiter DataBase - RADB</a></li>
+  <li><a href="http://puck.nether.net/netops/nocs.cgi">Network Operations Centers List</a></li>
+  <li><a href="http://puck.nether.net/cisco-nsp/">Cisco-NSP</a></li>
+  <li><a href="http://www.cymru.com/Documents/secure-ios-template.html">Secure IOS Template</a></li>
+  <li><a href="http://www.cymru.com/Documents/secure-bgp-template.html">Secure BGP Template</a></li>
+  <li><a href="http://net.doit.wisc.edu/data/flow/size/">Internet Traffic Flow Size Analysis</a></li>
+  <li><a href="http://oss.oetiker.ch/mrtg/">Multi Router Traffic Grapher (MRTG)</a></li>
  
 </ul>
 
@@ -53,6 +71,8 @@
   <li><a href="https://www.whatsmydns.net/">What's My DNS?</a></li>
   <li><a href="http://pcsupport.about.com/od/tipstricks/a/free-public-dns-servers.htm">List of Free and Public DNS Servers</a></li>
   <li><a href="http://public-dns.tk/">Public DNS Server List</a></li>
+  <li><a href="http://www.intodns.com/">DNS records checker</a></li>
+  <li><a href="http://www.analogx.com/contents/dnsdig.htm">DNS Dig</a></li>
 </ul>
 
 
