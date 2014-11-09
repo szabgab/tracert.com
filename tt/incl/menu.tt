@@ -19,6 +19,14 @@
 
       <div class="menu right">
         <a href="/resources" class="item">Resources</a>
+        <a href="/help"  class="item">Help</a>
+<!--
+        <div class="ui dropdown item">
+          <i class="content basic icon"></i>
+          <div class="menu">
+          </div>
+-->
+
 <!--
           <a href="/blog/atom" class="item"><i class="rss icon"></i></a>
 -->

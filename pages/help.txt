@@ -1,0 +1,24 @@
+=title Help
+
+<p>
+The source code of tracert.com web site can be found on <a href="https://github.com/szabgab/tracert.com/">GitHub</a>.
+</p>
+<p>
+I cannot provide support for the Traceroute and Ping gateways as they are not controlled by me, but if you find a gateway that
+does not work properly I can contact the maintainer or take it off the list.
+</p>
+
+<p>
+The <a href="/resolver">resolver</a> is controlled by me.
+</p>
+
+
+<p>
+If you encounter any problem, or if you know about other gateways, that are not listed on the web site,
+please open an <a href="https://github.com/szabgab/tracert.com/issues">issue</a>.
+</p>
+
+<p>
+If you have questions about the site, feel free to ask it via the GitHub issues.
+</p>
+
