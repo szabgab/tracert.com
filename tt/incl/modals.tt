@@ -4,7 +4,13 @@
   </div>
   <div class="content">
     <div class="left">
-      You need to provide a hostname
+      You need to provide a hostname. Something like these:
+      <ul>
+         <li>tracert.com</li>
+         <li>www.google.com</li>
+         <li>mail.perlweekly.com</li>
+      </ul>
+      
     </div>
   </div>
   <div class="actions">

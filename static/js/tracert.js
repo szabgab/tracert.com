@@ -16,12 +16,14 @@ $(document).ready(function(){
 	});
 
 	$('#resolve').on('click', function() {
-		if (! $('#arg').val()) {
-			console.log('no');
-			$("#needhostname").modal('show');
-			return false;
-		}
-		return true;
+		var hostname = $('#arg').val();
+		if (hostname && /^[0-9a-zA-Z.-]+$/.exec(hostname) ) {
+			alert("'" + hostname + "'");
+            return true;
+        }
+
+		$("#needhostname").modal('show');
+		return false;
 	});
 
 	$('#run').on('click', function() {
