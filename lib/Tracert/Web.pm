@@ -15,9 +15,9 @@ use Plack::Response;
 use Plack::Request;
 use Pod::Simple::HTML;
 use POSIX qw(strftime);
-use Socket qw(inet_ntoa);
 use Template;
 use Time::Local qw(timegm);
+use Net::DNS ();
 
 use Tracert::Exe;
 use Tracert::DB;
@@ -167,11 +167,14 @@ sub resolver {
 	my $hostname = $request->param('arg');
 	if ($hostname) {
 		$params{hostname} = $hostname;
-		my $packed = scalar gethostbyname $hostname;
-		if ($packed) {
-			my $ip = inet_ntoa($packed);
-			if ($ip) {
-				$params{ip} = $ip;
+		my $res = Net::DNS::Resolver->new;
+		my $query = $res->search( $hostname, 'A' );
+		if ($query) {
+			foreach my $rr ( $query->answer ) {
+				if ( $rr->type eq 'A' ) {
+					$params{ip} = $rr->address;
+					last;
+				}
 			}
 		}
 	}
