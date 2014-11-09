@@ -7,6 +7,8 @@
          "email" : "",
          "homepage_url" : "",
          "id" : "",
+         "ipv4" : "",
+         "ipv6" : "",
          "organization" : "",
          "service" : "traceroute",
          "status" : "ENABLE",
