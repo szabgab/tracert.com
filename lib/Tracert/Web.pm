@@ -295,6 +295,10 @@ sub template {
 		$vars->{adsense} = path($as_file)->slurp_utf8 // '';
 	}
 
+	if ($ENV{DEV}) {
+		$vars->{timestamp} = '?' . time;
+	}
+
 	#eval {
 	#	$vars->{totals} = from_json path("$root/totals.json")->slurp_utf8;
 	#};
