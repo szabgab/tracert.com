@@ -168,12 +168,14 @@ sub resolver {
 	if ($hostname) {
 		$params{hostname} = $hostname;
 		my $res = Net::DNS::Resolver->new;
-		$params{record_A} = [];
-		my $query = $res->search( $hostname, 'A' );
-		if ($query) {
-			foreach my $rr ( $query->answer ) {
-				if ( $rr->type eq 'A' ) {
-					push @{ $params{record_A} }, $rr->address;
+		for my $record (qw(A AAAA)) {
+			$params{"record_$record"} = [];
+			my $query = $res->search( $hostname, $record );
+			if ($query) {
+				foreach my $rr ( $query->answer ) {
+					if ( $rr->type eq $record ) {
+						push @{ $params{"record_$record"} }, $rr->address;
+					}
 				}
 			}
 		}
