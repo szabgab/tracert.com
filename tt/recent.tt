@@ -1,0 +1,25 @@
+    <div class="row">
+        <div class="column">
+            <div class="ui message main">
+                <h1 class="ui header"><% template.title || title %></h1>
+
+<ul>
+<% FOR e IN events %>
+  <li><% date.format(e.timestamp, ' %Y %b %d') %>
+      <% SWITCH e.action %>
+      <% CASE 'resolve' %>
+         <a href="/resolver?arg=<% e.hostname %>"><% e.action %> <% e.hostname %></a>
+            <% INCLUDE 'incl/resolver.tt'  results = e.results %>
+      <% CASE %>
+         <% e.action %>
+     <% END %>
+  </li>
+<% END %>
+</ul>
+
+            </div>
+        </div>
+    </div>
+
+
+

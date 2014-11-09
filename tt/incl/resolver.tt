@@ -1,0 +1,28 @@
+  <% IF results.record_A.size %>
+     <% IF results.record_A.size == 1 %>
+        <h2>Resolution of <% hostname %> is <% results.record_A.0 %></h2>
+     <% ELSE %>
+        <h2>Resolution of <% hostname %> resulted in the following IPv4 addresses: </h2>
+        <% FOR ip IN results.record_A.sort.reverse %>
+           <h3><% ip %></h3>
+        <% END %>
+     <% END %>
+  <% ELSE %>
+    <h2>Could not resolve <% hostname %>.</h2>
+  <% END %>
+
+
+  <% IF results.record_AAAA.size %>
+     <% IF results.record_AAAA.size == 1 %>
+        <h2>Resolution of <% hostname %> is <% results.record_AAAA.0 %></h2>
+     <% ELSE %>
+        <h2>Resolution of <% hostname %> resulted in the following IPv6 addresses: </h2>
+        <% FOR ip IN results.record_AAAA.sort.reverse %>
+           <h3><% ip %></h3>
+        <% END %>
+     <% END %>
+  <% ELSE %>
+    <h2><% hostname %> does not have IPv6 address.</h2>
+  <% END %>
+
+

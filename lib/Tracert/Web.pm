@@ -116,6 +116,10 @@ sub run {
 			return traceroute( $env, $request, $1 );
 		}
 
+		if ( $path_info eq '/recent' ) {
+			return recent();
+		}
+
 		if ( $path_info eq '/resolver' ) {
 			return resolver($request);
 		}
@@ -160,13 +164,39 @@ sub run {
 	};
 }
 
+sub recent {
+	#experimental feature, extermly stupid way to get most recent entries of the log
+	my $root = root();
+	my $filename = "$root/logs/" . strftime('%Y-%m-%d.txt', gmtime());
+	my @lines;
+	if (open my $fh, '<', $filename) {
+		@lines = <$fh>;
+		my $LIMIT = 20;
+		if (@lines > $LIMIT) {
+			splice(@lines, 0, -$LIMIT);
+		}
+	}
+	my @entries;
+	chomp @lines;
+	foreach my $line (@lines) {
+		my ($timestamp, $action, $data) = split /:/, $line, 3;
+		my $data = eval {from_json($data)};
+		push @entries, {
+			timestamp => $timestamp,
+			action    => $action,
+			%$data,
+		};
+	}
+	return template('recent', {events => \@entries, title => 'Recent requests'});
+}
+
 sub save {
 	my ($action, $results) = @_;
 	my $root = root();
 	mkdir "$root/logs";
 	my $filename = "$root/logs/" . strftime('%Y-%m-%d.txt', gmtime());
 	if (open my $fh, '>>', $filename) {
-		print $fh join ':', time, $action, to_json $results;
+		say $fh join ':', time, $action, to_json $results;
 		close $fh;
 	}
 }
@@ -180,12 +210,12 @@ sub resolver {
 		$params{hostname} = $hostname;
 		my $res = Net::DNS::Resolver->new;
 		for my $record (qw(A AAAA)) {
-			$params{"record_$record"} = [];
+			$params{results}{"record_$record"} = [];
 			my $query = $res->search( $hostname, $record );
 			if ($query) {
 				foreach my $rr ( $query->answer ) {
 					if ( $rr->type eq $record ) {
-						push @{ $params{"record_$record"} }, $rr->address;
+						push @{ $params{results}{"record_$record"} }, $rr->address;
 					}
 				}
 			}

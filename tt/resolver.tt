@@ -16,33 +16,7 @@ results.
 </p>
 
 <% IF hostname %>
-  <% IF record_A.size %>
-     <% IF record_A.size == 1 %>
-        <h2>Resolution of <% hostname %> is <% record_A.0 %></h2>
-     <% ELSE %>
-        <h2>Resolution of <% hostname %> resulted in the following IPv4 addresses: </h2>
-        <% FOR ip IN record_A.sort.reverse %>
-           <h3><% ip %></h3>
-        <% END %>
-     <% END %>
-  <% ELSE %>
-    <h2>Could not resolve <% hostname %>.</h2>
-  <% END %>
-
-
-  <% IF record_AAAA.size %>
-     <% IF record_AAAA.size == 1 %>
-        <h2>Resolution of <% hostname %> is <% record_AAAA.0 %></h2>
-     <% ELSE %>
-        <h2>Resolution of <% hostname %> resulted in the following IPv6 addresses: </h2>
-        <% FOR ip IN record_AAAA.sort.reverse %>
-           <h3><% ip %></h3>
-        <% END %>
-     <% END %>
-  <% ELSE %>
-    <h2><% hostname %> does not have IPv6 address.</h2>
-  <% END %>
-
+  <% INCLUDE 'incl/resolver.tt' %>
 <% END %> 
 
 <% INCLUDE 'incl/resolver_form.tt' %>
