@@ -11,6 +11,7 @@ my %conf = (
 		'Data::Dumper'           => '0',
 		'File::Basename'         => '0',
 		'HTTP::Tiny'             => '0',
+		'Net::DNS'               => '0',
 		'Plack::Request'         => '0',
 		'Template'               => '0',
 		'Template::Plugin::Page' => '0',
