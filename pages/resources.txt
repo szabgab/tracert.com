@@ -10,7 +10,30 @@
 
 <ul>
   <li><a href="http://www.keynote.com/">Keynote</a></li>
+  <li><a href="http://www.monitis.com/">Monitis</a></li>
+  <li><a href="https://www.pingdom.com/">Pingdom</a></li>
 </ul>
+
+<h2>Traceroute</h2>
+
+<ul>
+  <li><a href="http://en.wikipedia.org/wiki/Traceroute">Traceroute</a></li>
+  <li><a href="http://lookingglass.pccwglobal.com/">PCCW Global Ping and Traceroute</a></li>
+  <li><a href="http://lg.telia.ru/">TeliaSonera</a></li>
+
+</ul>
+
+<h2>DNS Resolution</h2>
+
+<ul>
+  <li><a href="http://hosting.intermedia.net/support/kb/?id=797">What Is DNS Propagation?</a></li>
+  <li><a href="https://www.whatsmydns.net/">What's My DNS?</a></li>
+  <li><a href="http://pcsupport.about.com/od/tipstricks/a/free-public-dns-servers.htm">List of Free and Public DNS Servers</a></li>
+  <li><a href="http://public-dns.tk/">Public DNS Server List</a></li>
+  <li><a href="http://www.intodns.com/">DNS records checker</a></li>
+  <li><a href="http://www.analogx.com/contents/dnsdig.htm">DNS Dig</a></li>
+</ul>
+
 
 <h2>Other resources</h2>
 
@@ -52,28 +75,10 @@
   <li><a href="http://net.doit.wisc.edu/data/flow/size/">Internet Traffic Flow Size Analysis</a></li>
   <li><a href="http://oss.oetiker.ch/mrtg/">Multi Router Traffic Grapher (MRTG)</a></li>
   <li><a href="http://www.nabber.org/projects/dnscheck/">Nabber</a></li>
+  <li><a href="http://www.ip4easy.com/">IP4Easy</a></li>
+  <li><a href="http://www.iplocation.net/">IP location</a></li>
  
 </ul>
 
-
-<h2>Traceroute</h2>
-
-<ul>
-  <li><a href="http://en.wikipedia.org/wiki/Traceroute">Traceroute</a></li>
-  <li><a href="http://lookingglass.pccwglobal.com/">PCCW Global Ping and Traceroute</a></li>
-  <li><a href="http://lg.telia.ru/">TeliaSonera</a></li>
-
-</ul>
-
-<h2>DNS Resolution</h2>
-
-<ul>
-  <li><a href="http://hosting.intermedia.net/support/kb/?id=797">What Is DNS Propagation?</a></li>
-  <li><a href="https://www.whatsmydns.net/">What's My DNS?</a></li>
-  <li><a href="http://pcsupport.about.com/od/tipstricks/a/free-public-dns-servers.htm">List of Free and Public DNS Servers</a></li>
-  <li><a href="http://public-dns.tk/">Public DNS Server List</a></li>
-  <li><a href="http://www.intodns.com/">DNS records checker</a></li>
-  <li><a href="http://www.analogx.com/contents/dnsdig.htm">DNS Dig</a></li>
-</ul>
 
 
