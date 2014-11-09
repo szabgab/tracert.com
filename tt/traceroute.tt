@@ -38,7 +38,7 @@
             <div class="ui message main">
                 <h1 class="ui header"><% template.title || title %></h1>
                 <p>
-<form id="form" action="/run">
+                 <form id="form" action="/run">
                    <div class="ui input">
                       <input id="host" name="host" value="<% host %>" />
                    </div>
@@ -62,18 +62,7 @@
                    <div class="ui button" id="run">
                      Run
                    </div>
-</form>
-                   <!--
-                   <% INCLUDE 'incl/traceroute_form.tt' %>
-                   -->
-                   <!--
-                   <% IF host %>
-                     Traceroute to <% host %>
-                     <pre>
-                     <% out %>
-                     </pre>
-                   <% END %>
-                   -->
+                </form>
 
                 </p>
                 <p>
