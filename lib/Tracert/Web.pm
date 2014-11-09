@@ -160,10 +160,21 @@ sub run {
 	};
 }
 
+sub save {
+	my ($action, $results) = @_;
+	my $root = root();
+	mkdir "$root/logs";
+	my $filename = "$root/logs/" . strftime('%Y-%m-%d.txt', gmtime());
+	if (open my $fh, '>>', $filename) {
+		print $fh join ':', time, $action, to_json $results;
+		close $fh;
+	}
+}
+
 sub resolver {
 	my ($request) = @_;
 
-	my %params = ( title => 'Resolver gateway - Testing DNS resolving', );
+	my %params;
 	my $hostname = $request->param('arg');
 	if ($hostname) {
 		$params{hostname} = $hostname;
@@ -179,7 +190,10 @@ sub resolver {
 				}
 			}
 		}
+		save('resolve', \%params);
 	}
+
+	$params{title} = 'Resolver gateway - Testing DNS resolving';
 	return template( 'resolver', \%params );
 }
 
