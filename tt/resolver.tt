@@ -16,8 +16,15 @@ results.
 </p>
 
 <% IF hostname %>
-  <% IF ip %>
-    <h2>Resolution of <% hostname %> is <% ip %></h2>
+  <% IF record_A.size %>
+     <% IF record_A.size == 1 %>
+        <h2>Resolution of <% hostname %> is <% record_A.0 %></h2>
+     <% ELSE %>
+        <h2>Resolution of <% hostname %> resulted in the following IPv4 addresses: </h2>
+        <% FOR ip IN record_A.sort.reverse %>
+           <h3><% ip %></h3>
+        <% END %>
+     <% END %>
   <% ELSE %>
     <h2>Could not resolve <% hostname %>.</h2>
   <% END %>
