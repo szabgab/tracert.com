@@ -295,7 +295,7 @@ sub template {
 		$vars->{adsense} = path($as_file)->slurp_utf8 // '';
 	}
 
-	if ($ENV{DEV}) {
+	if ( $ENV{DEV} ) {
 		$vars->{timestamp} = '?' . time;
 	}
 
