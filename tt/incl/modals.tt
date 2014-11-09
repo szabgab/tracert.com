@@ -14,4 +14,36 @@
   </div>
 </div>
 
+<div class="ui small modal" id="zero">
+  <div class="header">
+   Tracert
+  </div>
+  <div class="content">
+    <div class="left">
+      You need to select at least one starting point.
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui button">
+      OK
+    </div>
+  </div>
+</div>
+
+<div class="ui small modal" id="toomany">
+  <div class="header">
+   Tracert
+  </div>
+  <div class="content">
+    <div class="left">
+      More than 3 starting points won't look good.
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui button">
+      OK
+    </div>
+  </div>
+</div>
+
 
