@@ -4,6 +4,6 @@
 /Makefile
 /blib/
 /config
+/logs
 /pm_to_blib
 /totals.json
-/logs
