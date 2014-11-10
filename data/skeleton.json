@@ -10,8 +10,8 @@
          "ipv4" : "",
          "ipv6" : "",
          "organization" : "",
-         "service" : "traceroute",
-         "status" : "ENABLE",
+         "service" : "looking-glass",
+         "status" : "SHOW",
          "url" : "",
          "action" : ""
       }

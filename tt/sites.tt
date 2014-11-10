@@ -1,0 +1,27 @@
+
+
+    <div class="row">
+        <div class="column">
+            <div class="ui message main">
+                <h1 class="ui header"><% template.title || title %></h1>
+                <p>
+                   <div class="ui link list">
+                   <% FOR s IN gateways %>
+                     <% IF s.service == service %>
+                        <div class="ui item">
+                           <label><% s.country %> - <a href="<% s.homepage_url %>"><% s.organization %></a>
+                              - <a href="<% s.url %>">Direct</a>
+                           </label>
+                        </div>
+                     <% END %>
+                   <% END %>
+                   </div>
+
+                </p>
+                <p>
+                </p>
+
+            </div>
+        </div>
+    </div>
+

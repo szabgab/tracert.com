@@ -116,6 +116,10 @@ sub run {
 			return traceroute( $env, $request, $1 );
 		}
 
+		if ( $path_info =~ m{^/(looking-glass)$} ) {
+			return list_sites( $env, $request, $1 );
+		}
+
 		if ( $path_info eq '/recent' ) {
 			return recent();
 		}
@@ -272,6 +276,21 @@ sub _get_gateways {
 	return
 		grep { $_->{status} eq 'SHOW' or $_->{status} eq 'ENABLE' }
 		@{ $data->{gateways} };
+}
+
+sub list_sites {
+	my ( $env, $request, $service ) = @_;
+
+	my @gws
+		= sort { lc $a->{country} cmp lc $b->{country} } _get_gateways('');
+	return template(
+		'sites',
+		{
+			title    => ucfirst($service) . ' from around the world',
+			gateways => \@gws,
+			service  => $service,
+		}
+	);
 }
 
 sub traceroute {

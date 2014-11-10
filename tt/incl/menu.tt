@@ -8,6 +8,7 @@
         <a href="/resolver" class="item">Resolve</a>
         <a href="/traceroute" class="item">Traceroute</a>
         <a href="/ping" class="item">Ping</a>
+        <a href="/looking-glass" class="item">Looking Glass</a>
 
         <div class="ui dropdown item">IPv6
           <i class="dropdown icon"></i>
