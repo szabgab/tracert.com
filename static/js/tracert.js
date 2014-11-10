@@ -18,7 +18,6 @@ $(document).ready(function(){
 	$('#resolve').on('click', function() {
 		var hostname = $('#arg').val();
 		if (hostname && /^[0-9a-zA-Z.-]+$/.exec(hostname) ) {
-			alert("'" + hostname + "'");
             return true;
         }
 
@@ -27,7 +26,6 @@ $(document).ready(function(){
 	});
 
 	$('#run').on('click', function() {
-		//alert($('#host').val());
 
 		if (gws == 0) {
 			$('#zero').modal('show');
@@ -49,7 +47,6 @@ $(document).ready(function(){
 		console.log(req);
 		var reswin = window.open("/run?" + req, "ResultWindow","status,resizable=yes,hight=500");
 		reswin.focus();
-		//alert(this);
 	});
 });
 
