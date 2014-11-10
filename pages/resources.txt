@@ -2,26 +2,25 @@
 
 <h2>Traceroute monitoring system</h2>
 
-<ul>
-  <li><a href="http://www.visualroute.com/">Visual Route</a> desktop tool to see how your computers is reaching other sites. It also has a <a href="http://visualroute.visualware.com/">web based</a> version.</li>
-</ul>
+<div class="ui list">
+  <div class="item"><a href="http://www.visualroute.com/">Visual Route</a> desktop tool to see how your computers is reaching other sites. It also has a <a href="http://visualroute.visualware.com/">web based</a> version.</div>
+</div>
 
 <h2>Commercial Performance Monitoring Systems</h2>
 
-<ul>
-  <li><a href="http://www.keynote.com/">Keynote</a></li>
-  <li><a href="http://www.monitis.com/">Monitis</a></li>
-  <li><a href="https://www.pingdom.com/">Pingdom</a></li>
-</ul>
+<div class="ui list">
+  <div class="item"><a href="http://www.keynote.com/">Keynote</a></div>
+  <div class="item"><a href="http://www.monitis.com/">Monitis</a></div>
+  <div class="item"><a href="https://www.pingdom.com/">Pingdom</a></div>
+</div>
 
 <h2>Traceroute</h2>
 
-<ul>
-  <li><a href="http://en.wikipedia.org/wiki/Traceroute">Traceroute</a></li>
-  <li><a href="http://lookingglass.pccwglobal.com/">PCCW Global Ping and Traceroute</a></li>
-  <li><a href="http://lg.telia.ru/">TeliaSonera</a></li>
-
-</ul>
+<div class="ui list">
+  <div class="item"><a href="http://en.wikipedia.org/wiki/Traceroute">Traceroute</a></div>
+  <div class="item"><a href="http://lookingglass.pccwglobal.com/">PCCW Global Ping and Traceroute</a></div>
+  <div class="item"><a href="http://lg.telia.ru/">TeliaSonera</a></div>
+</div>
 
 <h2>DNS Resolution</h2>
 
