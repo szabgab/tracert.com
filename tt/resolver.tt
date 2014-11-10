@@ -22,7 +22,7 @@ results.
 <% INCLUDE 'incl/resolver_form.tt' %>
 
 <p>
-What you can see here is the IP address your name tranlsates to.
+What you can see here is the IP address your name translates to.
 </p>
 
 <p>
