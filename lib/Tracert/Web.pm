@@ -115,7 +115,7 @@ sub run {
 			return serve_blog_atom($env);
 		}
 		if ( $path_info eq '/sitemap.xml' ) {
-			return sitemap($env, $request);
+			return sitemap( $env, $request );
 		}
 
 		if ( $path_info eq '/run' ) {
@@ -345,28 +345,23 @@ sub _client {
 }
 
 sub sitemap {
-	my ($env, $request) = @_;
+	my ( $env, $request ) = @_;
 
 	my $now = strftime( '%Y-%m-%d.txt', gmtime() );
 
 	my $blog = Tracert::Blog->new( dir => root() . '/pages' );
 	$blog->collect;
-	my @posts
-		= reverse sort { $a->{timestamp} cmp $b->{timestamp} }
-		grep { $_->{timestamp} }
-		@{ $blog->posts };
+	my @posts = reverse sort { $a->{timestamp} cmp $b->{timestamp} }
+		grep { $_->{timestamp} } @{ $blog->posts };
 
-	my @pages = map {
-		{
-			filename => $_,
-			timestamp => $now,
-		} } qw(traceroute ping resolver looking-glass traceroute6 ping6 resources help news);
+	my @pages = map { { filename => $_, timestamp => $now, } }
+		qw(traceroute ping resolver looking-glass traceroute6 ping6 resources help news);
 
-	push @pages, 
-	map { { filename => $_->{path}, timestamp => $_->{timestamp} } }  @posts;
+	push @pages,
+		map { { filename => $_->{path}, timestamp => $_->{timestamp} } }
+		@posts;
 
-
-	my $url   = $request->base;
+	my $url = $request->base;
 	$url =~ s{/$}{};
 
 	my $xml = qq{<?xml version="1.0" encoding="UTF-8"?>\n};
@@ -386,13 +381,9 @@ sub sitemap {
 	}
 	$xml .= qq{</urlset>\n};
 
-	return [
-		'200',
-		[ 'Content-Type' => 'application/xml' ],
-		[ $xml ],
-	];
+	return [ '200', [ 'Content-Type' => 'application/xml' ], [$xml], ];
 
-};
+}
 
 sub serve_blog_atom {
 	my ($env) = @_;
@@ -405,10 +396,8 @@ sub serve_blog_atom {
 
 	my $blog = Tracert::Blog->new( dir => root() . '/pages' );
 	$blog->collect;
-	my @posts
-		= reverse sort { $a->{timestamp} cmp $b->{timestamp} }
-		grep { $_->{timestamp} }
-		@{ $blog->posts };
+	my @posts = reverse sort { $a->{timestamp} cmp $b->{timestamp} }
+		grep { $_->{timestamp} } @{ $blog->posts };
 
 	my $ts = DateTime->now;
 	my @entries;
@@ -427,12 +416,13 @@ sub serve_blog_atom {
 	}
 
 	my $pmf = Web::Feed->new(
-		url         => $url,
-		path        => 'atom',
-		title       => 'Tracert news',
-		updated     => $ts,
-		entries     => \@entries,
-		description => 'Tracert - Traceroute, Ping, Looking Glass, DNS name resolution and other network analyzis tools',
+		url     => $url,
+		path    => 'atom',
+		title   => 'Tracert news',
+		updated => $ts,
+		entries => \@entries,
+		description =>
+			'Tracert - Traceroute, Ping, Looking Glass, DNS name resolution and other network analyzis tools',
 	);
 
 	return [
@@ -442,18 +432,14 @@ sub serve_blog_atom {
 	];
 }
 
-
 sub serve_blog {
 
 	my $blog = Tracert::Blog->new( dir => root() . '/pages' );
 	$blog->collect;
-	my @posts
-		= reverse sort { $a->{timestamp} cmp $b->{timestamp} }
-		grep { $_->{timestamp} }
-		@{ $blog->posts };
+	my @posts = reverse sort { $a->{timestamp} cmp $b->{timestamp} }
+		grep { $_->{timestamp} } @{ $blog->posts };
 	return template( 'blog', { posts => \@posts } );
 }
-
 
 sub plain_template {
 	my ( $file, $vars ) = @_;
