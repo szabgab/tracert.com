@@ -14,9 +14,7 @@
   <link rel="stylesheet" type="text/css" href="/css/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="/css/tracert.css">
 
-<!--
-  <link href="/blog/atom" rel="alternate" type="application/atom+xml" title ="Tracert news" />
--->
+  <link href="/atom" rel="alternate" type="application/atom+xml" title ="Tracert news" />
 
 </head>
 <body>
