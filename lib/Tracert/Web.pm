@@ -5,6 +5,7 @@ use warnings;
 use Carp ();
 use Cwd qw(abs_path);
 use Data::Dumper qw(Dumper);
+use DateTime;
 use File::Basename qw(dirname);
 use HTTP::Tiny;
 use JSON qw(from_json to_json);
@@ -18,9 +19,11 @@ use POSIX qw(strftime);
 use Template;
 use Time::Local qw(timegm);
 use Net::DNS ();
+use Web::Feed;
 
 use Tracert::Exe;
 use Tracert::DB;
+use Tracert::Blog;
 
 our $VERSION = '0.01';
 
@@ -105,6 +108,13 @@ sub run {
 			);
 		}
 
+		if ( $path_info eq '/news' ) {
+			return serve_blog();
+		}
+		if ( $path_info eq '/atom' ) {
+			return serve_blog_atom($env);
+		}
+
 		if ( $path_info eq '/run' ) {
 			return run_traceroute( $env, $request );
 		}
@@ -185,7 +195,7 @@ sub recent {
 	chomp @lines;
 	foreach my $line (@lines) {
 		my ( $timestamp, $action, $data ) = split /:/, $line, 3;
-		my $data = eval { from_json($data) };
+		$data = eval { from_json($data) };
 		push @entries,
 			{
 			timestamp => $timestamp,
@@ -330,6 +340,67 @@ sub _client {
 	# let the developer see tracert.com in the box, not localhost
 	return $client eq '127.0.0.1' ? 'tracert.com' : $client;
 }
+
+sub serve_blog_atom {
+	my ($env) = @_;
+
+	my $xml = '';
+
+	my $request = Plack::Request->new($env);
+	my $url     = $request->base;
+	$url =~ s{/$}{};
+
+	my $blog = Tracert::Blog->new( dir => root() . '/pages' );
+	$blog->collect;
+	my @posts
+		= reverse sort { $a->{timestamp} cmp $b->{timestamp} }
+		grep { $_->{timestamp} }
+		@{ $blog->posts };
+
+	my $ts = DateTime->now;
+	my @entries;
+	foreach my $p (@posts) {
+		my %e;
+		$e{title}   = $p->{title};
+		$e{summary} = qq{<![CDATA[$p->{content}]]>};
+		$e{updated} = $p->{timestamp};
+
+		$e{link} = qq{$url/$p->{path}};
+
+		$e{id} = $p->{link};
+
+		#		$e{content} = qq{<![CDATA[$p->{abstract}]]>};
+		push @entries, \%e;
+	}
+
+	my $pmf = Web::Feed->new(
+		url         => $url,
+		path        => 'atom',
+		title       => 'Tracert news',
+		updated     => $ts,
+		entries     => \@entries,
+		description => 'Tracert - Traceroute, Ping, Looking Glass, DNS name resolution and other network analyzis tools',
+	);
+
+	return [
+		'200',
+		[ 'Content-Type' => 'application/atom+xml' ],
+		[ $pmf->atom ],
+	];
+}
+
+
+sub serve_blog {
+
+	my $blog = Tracert::Blog->new( dir => root() . '/pages' );
+	$blog->collect;
+	my @posts
+		= reverse sort { $a->{timestamp} cmp $b->{timestamp} }
+		grep { $_->{timestamp} }
+		@{ $blog->posts };
+	return template( 'blog', { posts => \@posts } );
+}
+
 
 sub plain_template {
 	my ( $file, $vars ) = @_;

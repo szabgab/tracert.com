@@ -1,0 +1,20 @@
+=title New era starts with a new look
+=timestamp 2014-11-04T08:30:01
+
+
+<p>
+After too many years of neglecting this site, today, finally I rebuilt it with brand new technology behind it.
+Not only that, but I've decided to make the whole back-end open source and put the source code on 
+<a href="https://github.com/szabgab/tracert.com">GitHub</a>.
+</p>
+
+<p>
+This includes the list of all the tracerute sites, all the ping site and everything.
+</p>
+
+<p>
+That means, if you find another site that should be included in the list, or if you find that something is broken
+on the web site, you can open an <a href="https://github.com/szabgab/tracert.com/issues">issue</a>, or you can
+even send a pull request fixing it.
+</p>
+

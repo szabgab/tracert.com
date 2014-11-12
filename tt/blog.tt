@@ -1,0 +1,27 @@
+<% META
+  title = "Tracert news"
+%>
+
+<main class="ui page grid">
+    <div class="row">
+        <div class="column">
+            <div class="ui message main">
+                <h1 class="ui header"><% template.title %> <a style="text-decoration:none;" href="/atom" class="item"><i class="rss icon"></i></a></h1>
+            </div>
+        </div>
+    </div>
+
+  <% FOR p IN posts %>
+    <div class="row">
+        <div class="column">
+            <div class="ui message main">
+               <h3 class="header item"><a href="/<% p.path %>"><% p.title %></a></h3>
+               (<% p.timestamp %>)
+               <p><% p.content %></p>
+            </div>
+        </div>
+    </div>
+  <% END %>
+
+</main>
+
