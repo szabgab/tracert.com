@@ -9,6 +9,7 @@ my %conf = (
 	PREREQ_PM    => {
 		'Cwd'                    => '0',
 		'Data::Dumper'           => '0',
+		'DateTime'               => '0',
 		'File::Basename'         => '0',
 		'HTTP::Tiny'             => '0',
 		'Net::DNS'               => '0',
@@ -19,6 +20,7 @@ my %conf = (
 		'JSON'                   => '0',
 		'Path::Tiny'             => '0',
 		'POSIX'                  => '0',
+		'Web::Feed'              => '0',
 	},
 );
 
