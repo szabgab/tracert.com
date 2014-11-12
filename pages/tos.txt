@@ -3,5 +3,5 @@
 <p>
 By using this service you accept to receive ocassional updates about this and other services of the company. You understand that the provider of the Speed-Meter service is not responsible for any damage or loss of revenue in any form that is caused by this service or by the lack of availability of this service. 
 The e-mail address you provide at the registration is your own address. 
-TraceRT can decide at any time without notifying the users to restrict or discontinue the free service provided on it sites.
+Tracert.com can decide at any time without notifying the users to restrict or discontinue the free service provided on it sites.
 </p>
