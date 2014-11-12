@@ -114,6 +114,9 @@ sub run {
 		if ( $path_info eq '/atom' ) {
 			return serve_blog_atom($env);
 		}
+		if ( $path_info eq '/sitemap.xml' ) {
+			return sitemap($env, $request);
+		}
 
 		if ( $path_info eq '/run' ) {
 			return run_traceroute( $env, $request );
@@ -340,6 +343,56 @@ sub _client {
 	# let the developer see tracert.com in the box, not localhost
 	return $client eq '127.0.0.1' ? 'tracert.com' : $client;
 }
+
+sub sitemap {
+	my ($env, $request) = @_;
+
+	my $now = strftime( '%Y-%m-%d.txt', gmtime() );
+
+	my $blog = Tracert::Blog->new( dir => root() . '/pages' );
+	$blog->collect;
+	my @posts
+		= reverse sort { $a->{timestamp} cmp $b->{timestamp} }
+		grep { $_->{timestamp} }
+		@{ $blog->posts };
+
+	my @pages = map {
+		{
+			filename => $_,
+			timestamp => $now,
+		} } qw(traceroute ping resolver looking-glass traceroute6 ping6 resources help news);
+
+	push @pages, 
+	map { { filename => $_->{path}, timestamp => $_->{timestamp} } }  @posts;
+
+
+	my $url   = $request->base;
+	$url =~ s{/$}{};
+
+	my $xml = qq{<?xml version="1.0" encoding="UTF-8"?>\n};
+	$xml
+		.= qq{<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n};
+	foreach my $p (@pages) {
+		$xml .= qq{  <url>\n};
+		$xml .= qq{    <loc>$url/$p->{filename}</loc>\n};
+		if ( $p->{timestamp} ) {
+			$xml .= sprintf qq{    <lastmod>%s</lastmod>\n},
+				substr( $p->{timestamp}, 0, 10 );
+		}
+
+		#$xml .= qq{    <changefreq>monthly</changefreq>\n};
+		#$xml .= qq{    <priority>0.8</priority>\n};
+		$xml .= qq{  </url>\n};
+	}
+	$xml .= qq{</urlset>\n};
+
+	return [
+		'200',
+		[ 'Content-Type' => 'application/xml' ],
+		[ $xml ],
+	];
+
+};
 
 sub serve_blog_atom {
 	my ($env) = @_;
