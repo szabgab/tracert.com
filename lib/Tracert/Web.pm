@@ -117,6 +117,15 @@ sub run {
 		if ( $path_info eq '/sitemap.xml' ) {
 			return sitemap( $env, $request );
 		}
+		if ( $path_info eq '/robots.txt' ) {
+			my $url = $request->base;
+			$url =~ s{/$}{};
+
+			my $txt = <<"END_TXT";
+Sitemap: $url/sitemap.xml
+END_TXT
+			return [ '200', [ 'Content-Type' => 'text/plain' ], [$txt], ];
+		}
 
 		if ( $path_info eq '/run' ) {
 			return run_traceroute( $env, $request );
@@ -175,7 +184,7 @@ sub run {
 
 	builder {
 		enable 'Plack::Middleware::Static',
-			path => qr{^/(images|js|css|fonts|favicon.ico|robots.txt)/},
+			path => qr{^/(images|js|css|fonts|favicon.ico)/},
 			root => "$root/static/";
 		$app;
 	};
