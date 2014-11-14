@@ -9,7 +9,7 @@ Not only that, but I've decided to make the whole back-end open source and put t
 </p>
 
 <p>
-This includes the list of all the tracerute sites, all the ping site and everything.
+This includes the list of all the traceroute sites, all the ping site and everything.
 </p>
 
 <p>
