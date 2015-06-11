@@ -184,7 +184,7 @@ END_TXT
 
 	builder {
 		enable 'Plack::Middleware::Static',
-			path => qr{^/(images|js|css|fonts|favicon.ico)},
+			path => qr{^/(images|js|css|fonts|favicon.ico|google419b25b06d9f4ffc.html)},
 			root => "$root/static/";
 		$app;
 	};
