@@ -20,6 +20,8 @@
 <% INCLUDE 'incl/traceroute_form.tt' %>
 -->
 
+<a href="/digitalocean" target="_blank"><img src="/images/ssd-virtual-servers-banner-2-728x90.jpg" /></a>
+
 
 <% INCLUDE 'incl/resolver_form.tt' %>
 
