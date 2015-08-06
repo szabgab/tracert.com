@@ -76,7 +76,9 @@
   <li><a href="http://www.nabber.org/projects/dnscheck/">Nabber</a></li>
   <li><a href="http://www.ip4easy.com/">IP4Easy</a></li>
   <li><a href="http://www.iplocation.net/">IP location</a></li>
+  <li><a href="http://en.wikipedia.org/wiki/List_of_Internet_exchange_points">List of Internet exchange points</a></li>
  
+  <li><a href="http://www.whoishostingthis.com/">Who is hosting this site?</a></li>
 </ul>
 
 
