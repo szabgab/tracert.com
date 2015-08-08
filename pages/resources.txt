@@ -79,6 +79,7 @@
   <li><a href="http://en.wikipedia.org/wiki/List_of_Internet_exchange_points">List of Internet exchange points</a></li>
  
   <li><a href="http://www.whoishostingthis.com/">Who is hosting this site?</a></li>
+  <li><a href="http://www.dotcom-tools.com/">Dotcom Tools</a></li>
 </ul>
 
 
